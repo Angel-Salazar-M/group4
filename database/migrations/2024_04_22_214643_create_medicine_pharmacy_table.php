@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('medicine_pharmacy', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->integer('pharmacy_id');
+            $table->integer('medicine_id');
         });
     }
 

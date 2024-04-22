@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('pharmacies', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('address');
+            $table->integer('pharmaceutical_license_number');
+            $table->string('hours_of_operation');
+            $table->integer('emergency_contact');
         });
     }
 

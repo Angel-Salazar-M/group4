@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('prescriptions', function (Blueprint $table) {
             $table->id();
+            $table->integer('patients_id');
+            $table->integer('doctor_ig');
             $table->timestamps();
         });
     }
