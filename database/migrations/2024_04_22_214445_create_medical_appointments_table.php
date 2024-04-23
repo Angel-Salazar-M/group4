@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Doctor;
+use App\Models\Hospital;
+use App\Models\Patient;
+use App\Models\Prescription;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,10 +19,10 @@ return new class extends Migration
             $table->id();
             $table->date('date');
             $table->string('description');
-            $table->integer('hospital_id');
-            $table->integer('patient_id');
-            $table->integer('doctor_id');
-            $table->integer('prescription_id');
+            $table->foreignIdFor(Hospital::class);
+            $table->foreignIdFor(Patient::class);
+            $table->foreignIdFor(Doctor::class);
+            $table->foreignIdFor(Prescription::class)->nullable();
         });
     }
 

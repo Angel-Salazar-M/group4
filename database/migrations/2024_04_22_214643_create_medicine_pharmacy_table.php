@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Medicine;
+use App\Models\Pharmacy;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('medicine_pharmacy', function (Blueprint $table) {
             $table->id();
-            $table->integer('pharmacy_id');
-            $table->integer('medicine_id');
+            $table->foreignIdFor(Pharmacy::class);
+            $table->foreignIdFor(Medicine::class);
         });
     }
 

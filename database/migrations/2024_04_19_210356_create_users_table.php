@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
-            $table->varchar('dui')->nullable(); 
+            $table->string('dui')->nullable();
             $table->date('birthday');
             $table->integer('phoneNumber');
             $table->string('email')->unique();
             $table->string('password');
+            $table->morphs('userable');
         });
     }
 
