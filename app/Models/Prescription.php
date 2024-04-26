@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use App\Models\Doctor;
+use App\Models\Patient;
+use App\Models\MedicalAppointment;
+use App\Models\MedicinePrescription;
+use App\Models\Medicine;
+
 
 class Prescription extends Model
 {
@@ -30,5 +37,9 @@ class Prescription extends Model
     public function medicinePrescriptions(): HasMany
     {
         return $this->hasMany(MedicinePrescription::class);
+    }
+    public function medicines(): HasManyThrough
+    {
+        return $this->hasMany(Medicine::class)->using(MedicinePrescription::class);
     }
 }
