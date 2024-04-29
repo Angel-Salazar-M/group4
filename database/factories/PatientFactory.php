@@ -17,7 +17,12 @@ class PatientFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "gender"=>faker()->title(),
+            "age"=>faker()->age(),
+            "address"=>faker()->address(),
+            "civil_status"=>faker()->lastName(),
+            "blood_type"=>faker()->word(),
+            "medical_conditions"=>faker()->words()
         ];
     }
 }

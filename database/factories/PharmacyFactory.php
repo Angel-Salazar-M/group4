@@ -17,7 +17,10 @@ class PharmacyFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "address" => faker()->adress(),
+            "pharmaceutical_license_number" => faker()->word(),
+            "hours_of_operation" => faker()->time(),
+            "emergency_contact" => faker()->phoneNumber(),
         ];
     }
 }

@@ -17,7 +17,7 @@ class TitleFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "title"=>faker()->sentences()
         ];
     }
 }
