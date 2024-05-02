@@ -17,12 +17,11 @@ class PatientFactory extends Factory
     public function definition(): array
     {
         return [
-            "gender"=>faker()->title(),
-            "age"=>faker()->age(),
-            "address"=>faker()->address(),
-            "civil_status"=>faker()->lastName(),
-            "blood_type"=>faker()->word(),
-            "medical_conditions"=>faker()->words()
+            "gender"=>fake()->boolean() ? "Male" : "Female",
+            "age"=>fake()->numberBetween(3, 70),
+            "address"=>fake()->address(),
+            "civil_status"=>fake()->randomElements(['Solter@', 'Casad@', 'Viud@']),
+            "blood_type"=>fake()->randonElements(['A+','A-','B+','B-','AB+','AB-','O+','O-'])
         ];
     }
 }

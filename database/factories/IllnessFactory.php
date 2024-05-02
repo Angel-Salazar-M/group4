@@ -17,7 +17,7 @@ class IllnessFactory extends Factory
     public function definition(): array
     {
         return [
-            "name" => faker()->words()
+            "name" => fake()->catchPhrase()
         ];
     }
 }

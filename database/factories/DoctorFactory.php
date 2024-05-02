@@ -17,7 +17,8 @@ class DoctorFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "medical_speciality"=> fake()->words(['Psiquiatra','Consulta clinica','Cardiologo','Odontologo','Pediatra']),
+            "medical_code"=> fake()->randomNumber()
         ];
     }
 }

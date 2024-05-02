@@ -15,6 +15,8 @@ class Doctor extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     public function user(): MorphOne
     {
         return $this->morphOne(User::class, 'userable');

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('address');
             $table->string('civil_status');
             $table->string('blood_type');
-            $table->string('medical_conditions');
         });
     }
 
