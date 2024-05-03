@@ -13,6 +13,8 @@ use App\Models\Prescription;
 
 class Medicine extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function medicinePrescription(): BelongsTo

@@ -9,6 +9,8 @@ use App\Models\MedicalAppointment;
 
 class Hospital extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function medicalAppointments(): HasMany

@@ -17,8 +17,8 @@ class MedicalAppointmentFactory extends Factory
     public function definition(): array
     {
         return [
-            "date"=> faker()->date(),
-            "description"=> faker()->paragraph()
+            "date"=> fake()->date(),
+            "description"=> fake()->paragraph()
         ];
     }
 }

@@ -20,8 +20,21 @@ class PatientFactory extends Factory
             "gender"=>fake()->boolean() ? "Male" : "Female",
             "age"=>fake()->numberBetween(3, 70),
             "address"=>fake()->address(),
-            "civil_status"=>fake()->randomElements(['Solter@', 'Casad@', 'Viud@']),
-            "blood_type"=>fake()->randonElements(['A+','A-','B+','B-','AB+','AB-','O+','O-'])
+            "civil_status"=>fake()->randomElements([
+            'Solter@',
+            'Casad@',
+            'Viud@'
+        ]),
+            "blood_type"=>fake()->randomElements([
+            'A+',
+            'A-',
+            'B+',
+            'B-',
+            'AB+',
+            'AB-',
+            'O+',
+            'O-'
+            ])
         ];
     }
 }

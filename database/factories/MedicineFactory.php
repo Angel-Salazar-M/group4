@@ -17,10 +17,10 @@ class MedicineFactory extends Factory
     public function definition(): array
     {
         return [
-            "date"=> fake()->date(),
-            "description"=> fake()->paragraph(),
-            "presentation"=> fake()->randomElements(['Inyectable','Inyectable','Dosis']),
-            "dosage"=> fake()->randomElements(['1 cucharada de cafe','1 cucharada de postre','1 gota','20 gotas','60 microgotas', '1kg', '1g','1mg','1l','1ml'])
+            "name" => fake()->word(),
+            "description" => fake()->paragraph(),
+            "presentation" => fake()->word(),
+            "dosage"=> fake()->word()
         ];
     }
 }

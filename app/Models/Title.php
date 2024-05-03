@@ -9,6 +9,8 @@ use App\Models\Doctor;
 
 class Title extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function doctor(): BelongsTo

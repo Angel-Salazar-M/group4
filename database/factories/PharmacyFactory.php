@@ -17,8 +17,8 @@ class PharmacyFactory extends Factory
     public function definition(): array
     {
         return [
-            "address" => fake()->adress(),
-            "pharmaceutical_license_number" => fake()->randonNumber(),
+            "address" => fake()->address(),
+            "pharmaceutical_license_number" => fake()->randomNumber(),
             "hours_of_operation" => fake()->numberBetween(0,24),
             "emergency_contact" => fake()->phoneNumber(),
         ];

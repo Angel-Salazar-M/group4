@@ -11,6 +11,8 @@ use App\Models\Medicine;
 use App\Models\MedicinePharmacy;
 class Pharmacy extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function user(): MorphOne
