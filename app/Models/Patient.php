@@ -13,6 +13,8 @@ use App\Models\MedicalAppointment;
 
 class Patient extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function user(): MorphOne

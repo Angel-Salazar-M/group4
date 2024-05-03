@@ -17,8 +17,10 @@ class MedicineFactory extends Factory
     public function definition(): array
     {
         return [
-            "date"=> faker()->date(),
-            "description"=> faker()->paragraph()
+            "name" => fake()->word(),
+            "description" => fake()->paragraph(),
+            "presentation" => fake()->word(),
+            "dosage"=> fake()->word()
         ];
     }
 }

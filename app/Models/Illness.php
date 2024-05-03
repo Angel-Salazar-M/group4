@@ -10,6 +10,8 @@ use App\Models\Patient;
 
 class Illness extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function patient(): BelongsTo
