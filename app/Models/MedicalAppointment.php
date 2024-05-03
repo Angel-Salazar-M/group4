@@ -12,6 +12,8 @@ use App\Models\Prescription;
 
 class MedicalAppointment extends Model
 {
+    public $timestamps = false;
+
     use HasFactory;
 
     public function hospital(): BelongsTo

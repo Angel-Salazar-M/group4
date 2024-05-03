@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Doctor;
+use App\Models\Patient;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Prescription>
@@ -17,6 +18,13 @@ class PrescriptionFactory extends Factory
             return Doctor::pluck('id');
         });
     }
+
+    public function patients(){
+        return once(function(){
+            return Patient::pluck('id');
+        });
+    }
+
     /**
      * Define the model's default state.
      *

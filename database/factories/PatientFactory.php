@@ -20,12 +20,12 @@ class PatientFactory extends Factory
             "gender"=>fake()->boolean() ? "Male" : "Female",
             "age"=>fake()->numberBetween(3, 70),
             "address"=>fake()->address(),
-            "civil_status"=>fake()->randomElements([
+            "civil_status"=>fake()->randomElement([
             'Solter@',
             'Casad@',
             'Viud@'
         ]),
-            "blood_type"=>fake()->randomElements([
+            "blood_type"=>fake()->randomElement([
             'A+',
             'A-',
             'B+',
