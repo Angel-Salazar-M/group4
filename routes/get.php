@@ -7,8 +7,12 @@ Route::get('/', function () {
 
 
 Route::get('/login', function () {
-    return "Hi";
-})->name("login");
+    return view('');
+}); //->name("login");
+
+Route::get('/register', function () {
+    return view('');
+});
 
 Route::get('/home', function () {
     return view('home');
