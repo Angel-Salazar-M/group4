@@ -1,5 +1,4 @@
-@props(['titulo', 'type', 'nombre'])
-
+@props(['type', 'nombre'])
 <div class="text-white grid col-4 mb-1 mt-2 font-mono">
     <h1 class="col-start-3 col-span-4 font-semibold">{{ $nombre }}</h1>
     <input type={{ $type }} name={{ $nombre }}
