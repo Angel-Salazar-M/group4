@@ -14,10 +14,14 @@ Route::get('/register', function () {
     return view('');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/sesión', function () {
+    return view('sesión');
 });
 
 Route::get('/prueba', function () {
     return view('prueba');
+});
+
+Route::get('/registrarse', function () {
+    return view('registrarse');
 });
