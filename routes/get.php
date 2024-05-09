@@ -25,3 +25,7 @@ Route::get('/prueba', function () {
 Route::get('/registrarse', function () {
     return view('registrarse');
 });
+
+Route::get('/homep', function () {
+    return view('homep');
+});
