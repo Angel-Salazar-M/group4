@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Auth\Events\Authenticated;
+//use Illuminate\Auth\Events\Authenticated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+Use App\Models\User;
 
 
 class UserController extends Controller
@@ -22,5 +23,21 @@ class UserController extends Controller
 
         return back()->withErrors(['email' => 'Credenciales incorrectas', 'password' => 'Credenciales incorrectas']);
 
-    } //pendiente :p
-}
+    }
+
+    public function register(Request $request) {
+        $verifiedData = $request->validate([
+            'name'=> 'required|min:3',
+            'email'=> 'required|email|unique:users,email',
+            'password'=> 'required|min:6|max:20,',
+        ]);
+
+        if( User::create($verifiedData) ) {
+            return redirect('/');
+        }
+
+        return back()->withErrors([]);
+    }
+
+};
+
