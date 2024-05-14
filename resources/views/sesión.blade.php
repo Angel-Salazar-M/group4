@@ -3,8 +3,8 @@
         <div class="grid content-center justify-items-center">
             <h1 class="text-4xl text-black text-center font-serif mb-6">Iniciar sesión</h1>
             <x-input type="text" nombre="correo electrónico" textoFondo="correo electrónico"></x-input>
-            <x-input type="password" nombre="contraseña" textoFondo="Contraseña" />
-            <p class="mt-4 font-serif hover:font-bold">¿Has olvidado tu contraseña?</p> {{-- convertir esto a un botón, pasar hover a focus --}}
+            <x-input type="password" nombre="contraseña" textoFondo="contraseña" />
+            <a href="prueba" class="mt-4 font-serif hover:font-bold">¿Has olvidado tu contraseña?</a> {{-- convertir esto a un botón, pasar hover a focus --}}
             <x-primary-button texto="Iniciar sesión" />
         </div>
         <div class="w-full h-full grid content-center bg bg-[#72A9D7]">
