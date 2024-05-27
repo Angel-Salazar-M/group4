@@ -7,22 +7,18 @@ Route::get('/', function () {
 
 
 Route::get('/login', function () {
-    return view('');
+    return view('sesion');
 }); //->name("login");
 
 Route::get('/register', function () {
     return view('');
 });
 
-Route::get('/sesión', function () {
-    return view('sesión');
-});
-
 Route::get('/prueba', function () {
     return view('prueba');
 });
 
-Route::get('/registrarse', function () {
+Route::get('/register', function () {
     return view('registrarse');
 });
 
