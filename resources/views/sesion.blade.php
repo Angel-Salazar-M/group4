@@ -15,7 +15,7 @@
 
         </div>
         <div class="w-full h-full grid content-center bg bg-[#72A9D7]">
-            <h1 class="text-4xl text-white text-center font-serif">¡ Bienvenido, usuario !</h1>
+            <h1 class="text-4xl text-white text-center font-serif">¡Bienvenido, usuario!</h1>
             <p class="text-center mt-6 font-serif text-white">Si todavía no has creado una cuenta con nosotros, <br>
                 ingresa tu
                 información aquí.</p>
