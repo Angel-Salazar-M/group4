@@ -19,7 +19,7 @@
             <p class="text-center mt-6 font-serif text-white">Si todavía no has creado una cuenta con nosotros, <br>
                 ingresa tu
                 información aquí.</p>
-            <x-primary-button texto="Registrarse" />
+            <a href="/register" class="border-2 font-serif border-white bg bg-[#72A9D7]  w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600">Registrarse</a>
         </div>
     </div>
 </x-layout>
