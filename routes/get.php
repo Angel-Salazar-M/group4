@@ -25,11 +25,6 @@ Route::get('/register', function () {
 Route::get('/homep', function () {
     return view('homep');
 });
-
-Route::get('/list', function () {
-    return view('patients-list');
-});
-
-Route::get('/vistaexp', function () {
-    return view('vista-expediente');
+Route::get('/homedoctores', function () {
+    return view('homedoctores');
 });
