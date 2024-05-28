@@ -36,7 +36,7 @@ class UserController extends Controller
             return redirect('/');
         }
 
-        return back()->withErrors([]);
+        return back()->withErrors(['nombre' => 'Credenciales incorrectas', 'email' => 'Credenciales incorrectas', 'password' => 'Credenciales']);
     }
 
 };
