@@ -29,3 +29,6 @@ Route::get('/registrarse', function () {
 Route::get('/homep', function () {
     return view('homep');
 });
+Route::get('/homedoctores', function () {
+    return view('homedoctores');
+});
