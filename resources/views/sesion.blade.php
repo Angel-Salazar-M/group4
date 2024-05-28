@@ -19,7 +19,7 @@
             <p class="text-center mt-6 font-serif text-white">Si todavía no has creado una cuenta con nosotros, <br>
                 ingresa tu
                 información aquí.</p>
-            <x-primary-button texto="Registrarse" />
+            <x-primary-button texto="Registrarse"/>
         </div>
     </div>
 </x-layout>

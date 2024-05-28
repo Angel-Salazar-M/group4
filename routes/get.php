@@ -11,7 +11,7 @@ Route::get('/login', function () {
 }); //->name("login");
 
 Route::get('/register', function () {
-    return view('');
+    return view('registrarse');
 });
 
 Route::get('/prueba', function () {
