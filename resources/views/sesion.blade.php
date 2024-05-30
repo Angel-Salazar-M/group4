@@ -9,7 +9,7 @@
                 <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
                 <x-input type="password" name="password" placeholder="contraseña" />
                 <a href="prueba" class="mt-4 font-serif hover:font-bold">¿Has olvidado tu contraseña?</a> {{-- convertir esto a un botón, pasar hover a focus --}}
-                <x-primary-button texto="Iniciar sesión" />
+                <x-primary-button texto="Iniciar sesión"/>
 
             </form>
 

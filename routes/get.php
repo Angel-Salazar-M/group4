@@ -28,3 +28,11 @@ Route::get('/homep', function () {
 Route::get('/homedoctores', function () {
     return view('homedoctores');
 });
+
+Route::get('/vistaexp', function () {
+    return view('vista-expediente');
+});
+
+Route::get('/list', function () {
+    return view('patients-list');
+});
