@@ -7,11 +7,11 @@ Route::get('/', function () {
 
 
 Route::get('/login', function () {
-    return view('LoginAndRegister.sesion');
+    return view('LoginRegister.sesion');
 }); //->name("login");
 
 Route::get('/register', function () {
-    return view('LoginAndRegister.registrarse');
+    return view('LoginRegister.registrarse');
 });
 
 Route::get('/prueba', function () {
@@ -19,7 +19,7 @@ Route::get('/prueba', function () {
 });
 
 Route::get('/register', function () {
-    return view('LoginAndRegister.registrarse');
+    return view('LoginRegister.registrarse');
 });
 
 Route::get('/homep', function () {
@@ -30,7 +30,7 @@ Route::get('/homedoctores', function () {
 });
 
 Route::get('/vistaexp', function () {
-    return view('PantallaDoctoresyPacientes.vista-expediente');
+    return view('pantallaDyP.vista-expediente');
 });
 
 Route::get('/list', function () {
