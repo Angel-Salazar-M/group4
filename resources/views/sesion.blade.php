@@ -9,7 +9,7 @@
                 <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
                 <x-input type="password" name="password" placeholder="contraseña" />
                 <a href="prueba" class="mt-4 font-serif hover:font-bold">¿Has olvidado tu contraseña?</a> {{-- convertir esto a un botón, pasar hover a focus --}}
-                <x-primary-button texto="Iniciar sesión"/>
+                <x-primary-button> Iniciar sesión</x-primary-button>
 
             </form>
 
@@ -19,7 +19,7 @@
             <p class="text-center mt-6 font-serif text-white">Si todavía no has creado una cuenta con nosotros, <br>
                 ingresa tu
                 información aquí.</p>
-            <a href="/register" class="border-2 font-serif border-white bg bg-[#72A9D7]  w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600">Registrarse</a>
+            <a href="/register" class="mx-auto border-2 font-serif border-white bg bg-[#72A9D7] text-center  w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600">Registrarse</a>
         </div>
     </div>
 </x-layout>
