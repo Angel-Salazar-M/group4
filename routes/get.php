@@ -7,32 +7,32 @@ Route::get('/', function () {
 
 
 Route::get('/login', function () {
-    return view('sesion');
+    return view('LoginAndRegister.sesion');
 }); //->name("login");
 
 Route::get('/register', function () {
-    return view('registrarse');
+    return view('LoginAndRegister.registrarse');
 });
 
 Route::get('/prueba', function () {
-    return view('prueba');
+    return view('pantallasDoctores.prueba');
 });
 
 Route::get('/register', function () {
-    return view('registrarse');
+    return view('LoginAndRegister.registrarse');
 });
 
 Route::get('/homep', function () {
-    return view('homep');
+    return view('Homepages.homep');
 });
 Route::get('/homedoctores', function () {
-    return view('homedoctores');
+    return view('Homepages.homedoctores');
 });
 
 Route::get('/vistaexp', function () {
-    return view('vista-expediente');
+    return view('PantallaDoctoresyPacientes.vista-expediente');
 });
 
 Route::get('/list', function () {
-    return view('patients-list');
+    return view('pantallasDoctores.patients-list');
 });
