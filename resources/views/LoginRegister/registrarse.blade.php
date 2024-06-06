@@ -12,9 +12,12 @@
 
             <form action="/register" method="POST">
                 @csrf
-                <x-input type="text" name="name" placeholder="Nombre completo" /> {{-- buscar forma de que salgan las dos palabras --}}
-                <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
-                <x-input type="password" name="password" placeholder="Contraseña" />
+                <x-input type="text" name="name" placeholder="Nombre completo"/> {{-- buscar forma de que salgan las dos palabras --}}
+                <x-input type="integer" name="dui" placeholder="Dui"/>
+                <x-input type="text" name="birthday" placeholder="Fecha de cumpleaños"/>
+                <x-input type="text" name="email" placeholder="Correo electrónico"></x-input>
+                <x-input type="text" name="Phone" placeholder="Número de teléfono" />
+                <x-input type="password" name="password" placeholder="Contraseña"/>
                 <x-primary-button texto="Registrarse"/>
             </form>
 
