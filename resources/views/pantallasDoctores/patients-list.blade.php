@@ -21,8 +21,8 @@
             </thead>
             <tbody class="border-2 border-black py-2 px-14">
                     <tr>
-                        <td class="border-2 border-black py-2 px-14 text-center">ola</td>
-                        <td class="border-2 border-black py-2 px-14 text-center">ola</td>
+                        <td class="border-2 border-black py-2 px-14 text-center"></td>
+                        <td class="border-2 border-black py-2 px-14 text-center"></td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>
