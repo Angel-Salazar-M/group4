@@ -22,21 +22,31 @@
                 <x-input type="password" name="password" placeholder="Contraseña" />
 
                 <p>Elige tu tipo de cnte</p>
-                <div x-data="{ doctor: false }">
+                <div x-data="{ userable: '' }">
                     <label>
-                        <input type="radio" id="doctor" @change="console.log(doctor)" name="userable" value="true" x-model="doctor">
+                        <input type="radio" id="doctor" @change="console.log(userable)" name="userable" value="dogtor" x-model="userable">
                         Dogtor
                     </label>
 
                     <label>
-                        <input type="radio" id="paciente" name="userable" @change="console.log(doctor)" value="false" x-model="doctor" checked>
+                        <input type="radio" id="paciente" name="userable" @change="console.log(userable)" value="patient" x-model="userable" checked>
                         Paciente
                     </label>
 
-                    <template x-if="doctor">
+                    <template x-if='userable === "dogtor"'>
                         <div>
-                            <x-input type="text" name="medicalSpeciality" placeholder="Especialidad médica" />
-                            <x-input type="text" name="medicalCode" placeholder="Código médico" />
+                            <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
+                            <x-input type="text" name="medical_code" placeholder="Código médico" />
+                        </div>
+                    </template>
+
+                    <template x-if='userable === "patient"'>
+                        <div>
+                            <x-input type="text" name="gender" placeholder="Genero" />
+                            <x-input type="text" name="age" placeholder="Edad" />
+                            <x-input type="text" name="address" placeholder="Dirección" />
+                            <x-input type="text" name="civilStatus" placeholder="Estado civil" />
+                            <x-input type="text" name="bloodType" placeholder="Tipo de sangre" />
                         </div>
                     </template>
                 </div>

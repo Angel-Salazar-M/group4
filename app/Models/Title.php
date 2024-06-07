@@ -10,6 +10,9 @@ use App\Models\Doctor;
 class Title extends Model
 {
     public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
 
     use HasFactory;
 

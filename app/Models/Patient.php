@@ -15,6 +15,10 @@ class Patient extends Model
 {
     public $timestamps = false;
 
+    protected $guarded = [
+        'id',
+    ];
+
     use HasFactory;
 
     public function user(): MorphOne

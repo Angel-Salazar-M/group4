@@ -11,6 +11,9 @@ use App\Models\Patient;
 class Illness extends Model
 {
     public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
 
     use HasFactory;
 
