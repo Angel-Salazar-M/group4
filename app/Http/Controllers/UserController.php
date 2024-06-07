@@ -28,8 +28,25 @@ class UserController extends Controller
     public function register(Request $request) {
         $verifiedData = $request->validate([
             'name'=> 'required|min:3',
-            'email'=> 'required|email|unique:users,email',
+            'dui' => 'required',
+            'birthday' => 'required',
+            'phoneNumber' => 'required',
             'password'=> 'required|min:6|max:20,',
+            'email'=> 'required|email|unique:users,email',
+        ]);
+
+        $userableData = $request->validate([
+
+            'medicalSpeciality' => 'required',
+            'medicalCode' => 'required',
+
+            'name'=> 'required|min:3',
+            'dui' => 'required',
+            'birthday' => 'required',
+            'phoneNumber' => 'required',
+            'password'=> 'required|min:6|max:20,',
+            'email'=> 'required|email|unique:users,email',
+
         ]);
 
         if( User::create($verifiedData) ) {
