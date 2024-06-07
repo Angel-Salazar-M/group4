@@ -49,3 +49,7 @@ Route::get('/prescriptionspac', function () {
 Route::get('/records', function () {
     return view('pantallasDoctores.Datosdehistorialdoc');
 });
+
+Route::get('/prescription/user', function () {
+    return view('pantallasPacientes.recetapac');
+});
