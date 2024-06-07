@@ -1,3 +1,4 @@
 <x-layout title="Prescripciones médicas">
-<x-barrapac/>
+<x-barrapacinpt/>
+<x-recetasvista/>
 </x-layout>
