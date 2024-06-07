@@ -25,7 +25,7 @@
                 <div x-data="{ doctor: false }">
                     <label>
                         <input type="radio" id="doctor" @change="console.log(doctor)" name="userable" value="true" x-model="doctor">
-                        Dogtor
+                        Doctor
                     </label>
 
                     <label>
