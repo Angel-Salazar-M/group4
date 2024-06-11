@@ -1,8 +1,4 @@
 <x-layout title="Patients list">
-    <div class="flex justify-between mb-2">
-        <h1 class="font-serif mt-4 ml-6">SV-HEALTH</h1>
-        <a href="" class="font-serif mt-4 mr-6 text-right text-[#76ABD7]">PERFIL</a>
-    </div>
     <x-barra />
     <div class="flex justify-between">
     <input type="text" name="buscador" placeholder="Buscar..."
@@ -21,8 +17,8 @@
             </thead>
             <tbody class="border-2 border-black py-2 px-14">
                     <tr>
-                        <td class="border-2 border-black py-2 px-14 text-center">ola</td>
-                        <td class="border-2 border-black py-2 px-14 text-center">ola</td>
+                        <td class="border-2 border-black py-2 px-14 text-center"></td>
+                        <td class="border-2 border-black py-2 px-14 text-center"></td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>
                         <td class="border-2 border-black py-2 px-14 text-center">ola</td>

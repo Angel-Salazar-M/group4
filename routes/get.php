@@ -30,9 +30,22 @@ Route::get('/homedoctores', function () {
 });
 
 Route::get('/vistaexp', function () {
-    return view('pantallaDyP.vista-expediente');
+    return view('pantallasDoctores.vista-expedientedoc');
 });
+
+Route::get('/vistaexpac', function () {
+    return view('pantallasPacientes.vista-expedientepac');
+});
+
 
 Route::get('/list', function () {
     return view('pantallasDoctores.patients-list');
+});
+
+Route::get('/prescriptionspac', function () {
+    return view('pantallasPacientes.recetaspac');
+});
+
+Route::get('/records', function () {
+    return view('pantallasDoctores.Datosdehistorialdoc');
 });

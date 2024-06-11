@@ -1,12 +1,9 @@
-<x-layout title="Home 1">
-    <div class="">
-        <div class="bg-neutral-50 mb-8">
 
-        </div>
-        <div class="bg bg-[#72A9D7] flex justify-center">
-            <input type="search" name="buscar" id="" class="border rounded-xl border-slate-700 bg bg-neutral-50 px-72 py-1">
-        </div>
-        <div class="bg-neutral-50">
+<x-layout title="Home 1">
+
+    <x-barrapacinpt />
+    <div class="">
+
 
         </div>
     </div>

@@ -1,1 +1,1 @@
-<h1 class="font-serif font-bold">{{$slot}}</h1>
+<h1 class="font-sans font-bold">{{$slot}}</h1>
