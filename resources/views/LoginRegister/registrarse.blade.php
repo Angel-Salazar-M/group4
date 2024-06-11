@@ -21,15 +21,15 @@
                 <x-input type="number" name="phoneNumber" placeholder="Número de teléfono" />
                 <x-input type="password" name="password" placeholder="Contraseña" />
 
-                <p>Elige tu tipo de cnte</p>
+                <p>Elige tu tipo de cuenta</p>
                 <div x-data="{ userable: '' }">
                     <label>
                         <input type="radio" id="doctor" @change="console.log(userable)" name="userable" value="dogtor" x-model="userable">
-                        Dogtor
+                        Doctor
                     </label>
 
                     <label>
-                        <input type="radio" id="paciente" name="userable" @change="console.log(userable)" value="patient" x-model="userable" checked>
+                        <input type="radio" id="paciente" name="userable" value="patient" x-model="userable" checked>
                         Paciente
                     </label>
 
@@ -42,11 +42,30 @@
 
                     <template x-if='userable === "patient"'>
                         <div>
-                            <x-input type="text" name="gender" placeholder="Genero" />
+                            <div>
+                                <label for="">
+                                    <input type="radio" name="gender" value="Hombre" placeholder="Genero">
+                                    Hombre
+                                </label>
+                                <label for="">
+                                    <input type="radio" name="gender" value="Mujer" placeholder="Genero">
+                                    Mujer
+                                </label>
+                            </div>
                             <x-input type="text" name="age" placeholder="Edad" />
                             <x-input type="text" name="address" placeholder="Dirección" />
-                            <x-input type="text" name="civilStatus" placeholder="Estado civil" />
-                            <x-input type="text" name="bloodType" placeholder="Tipo de sangre" />
+                            <select name="select">
+                                <option value="value1">Casada/o</option>
+                                <option value="value2">Divorciada/o</option>
+                                <option value="value3">Soltera/o</option>
+                                <option value="value3">Viuda/o</option>
+                              </select>
+                            <select name="select">
+                                <option value="value1">O RH positivo: 62%</option>
+                                <option value="value2">A RH positivo: 23%</option>
+                                <option value="value3">B RH positivo: 11%</option>
+                                <option value="value3">AB RH positivo: 1%</option>
+                              </select>
                         </div>
                     </template>
                 </div>

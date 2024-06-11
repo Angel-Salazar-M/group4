@@ -1,5 +1,7 @@
 <?php
+use App\Models\MedicalAppointment;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,8 +27,11 @@ Route::get('/register', function () {
 Route::get('/homep', function () {
     return view('Homepages.homep');
 });
-Route::get('/homedoctores', function () {
-    return view('Homepages.homedoctores');
+Route::get('/home/doctores', function () {
+    return view('Homepages.homedoctores', [
+        'user' => MedicalAppointment::all()
+    ]
+);
 });
 
 Route::get('/vistaexp', function () {

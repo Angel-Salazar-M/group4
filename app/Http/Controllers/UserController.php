@@ -49,8 +49,8 @@ class UserController extends Controller
             'gender' => 'exclude_unless:userable,patient|required',
             'age' => 'exclude_unless:userable,patient|required',
             'address' => 'exclude_unless:userable,patient|required',
-            'civilStatus' => 'exclude_unless:userable,patient|required',
-            'bloodType' => 'exclude_unless:userable,patient|required',
+            'civil_status' => 'exclude_unless:userable,patient|required',
+            'blood_type' => 'exclude_unless:userable,patient|required',
         ]);
 
         $user = User::create($verifiedData);
@@ -63,7 +63,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Doctor::create($userableData));
                     if($user->save()) {
-                        return redirect('/homedoctores');
+                        return redirect('/home/doctores');
                     }
                     break;
 
