@@ -21,7 +21,7 @@ class UserController extends Controller
         ]);
         if (Auth::attempt($credentials)) {
             if (Auth::user()->userable instanceof Doctor) {
-                return redirect('/homedoctores');
+                return redirect('/home/doctores');
             } else {
                 return redirect('/homep');
             }

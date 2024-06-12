@@ -55,16 +55,22 @@
                             <x-input type="text" name="age" placeholder="Edad" />
                             <x-input type="text" name="address" placeholder="Dirección" />
                             <select name="select">
-                                <option value="value1">Casada/o</option>
-                                <option value="value2">Divorciada/o</option>
-                                <option value="value3">Soltera/o</option>
-                                <option value="value3">Viuda/o</option>
+                                <option value="value3">Soltero/a</option>
+                                <option value="value1">Casado/a</option>
+                                <option value="value3">Unión libre</option>
+                                <option value="value3">Separado/a</option>
+                                <option value="value2">Divorciado/a</option>
+                                <option value="value3">Viudo/a</option>
                               </select>
                             <select name="select">
-                                <option value="value1">O RH positivo: 62%</option>
-                                <option value="value2">A RH positivo: 23%</option>
-                                <option value="value3">B RH positivo: 11%</option>
-                                <option value="value3">AB RH positivo: 1%</option>
+                                <option value="value1">A+</option>
+                                <option value="value2">A-</option>
+                                <option value="value3">B+</option>
+                                <option value="value3">B-</option>
+                                <option value="value3">AB+</option>
+                                <option value="value3">AB-</option>
+                                <option value="value3">O+</option>
+                                <option value="value3">O-</option>
                               </select>
                         </div>
                     </template>
