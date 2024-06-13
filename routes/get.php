@@ -24,37 +24,37 @@ Route::get('/register', function () {
     return view('LoginRegister.registrarse');
 });
 
-Route::get('/homep', function () {
+Route::get('/patient/home', function () {
     return view('Homepages.homep');
 });
-Route::get('/home/doctores', function () {
+Route::get('/doctor/home', function () {
     return view('Homepages.homedoctores', [
         'user' => MedicalAppointment::all()
     ]
 );
 });
 
-Route::get('/vistaexp', function () {
+Route::get('/doctor/record', function () {
     return view('pantallasDoctores.vista-expedientedoc');
 });
 
-Route::get('/vistaexpac', function () {
+Route::get('/patient/record', function () {
     return view('pantallasPacientes.vista-expedientepac');
 });
 
 
-Route::get('/list', function () {
+Route::get('/doctor/list', function () {
     return view('pantallasDoctores.patients-list');
 });
 
-Route::get('/prescriptionspac', function () {
+Route::get('/patient/prescription', function () {
     return view('pantallasPacientes.recetaspac');
 });
 
-Route::get('/records', function () {
+Route::get('/doctor/history', function () {
     return view('pantallasDoctores.Datosdehistorialdoc');
 });
 
-Route::get('/prescription/user', function () {
+Route::get('/patient/prescription', function () {
     return view('pantallasPacientes.recetapac');
 });
