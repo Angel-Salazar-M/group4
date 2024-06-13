@@ -17,7 +17,7 @@ Route::get('/register', function () {
 });
 
 Route::get('/prueba', function () {
-    return view('pantallasDoctores.prueba');
+    return view('prueba');
 });
 
 Route::get('/register', function () {
