@@ -12,6 +12,9 @@ use App\Models\MedicinePharmacy;
 class Pharmacy extends Model
 {
     public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
 
     use HasFactory;
 

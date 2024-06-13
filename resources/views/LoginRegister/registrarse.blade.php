@@ -21,22 +21,57 @@
                 <x-input type="number" name="phoneNumber" placeholder="Número de teléfono" />
                 <x-input type="password" name="password" placeholder="Contraseña" />
 
-                <p>Elige tu tipo de cnte</p>
-                <div x-data="{ doctor: false }">
+                <p>Elige tu tipo de cuenta</p>
+                <div x-data="{ userable: '' }">
                     <label>
-                        <input type="radio" id="doctor" @change="console.log(doctor)" name="userable" value="true" x-model="doctor">
+                        <input type="radio" id="doctor" @change="console.log(userable)" name="userable" value="dogtor" x-model="userable">
                         Doctor
                     </label>
 
                     <label>
-                        <input type="radio" id="paciente" name="userable" @change="console.log(doctor)" value="false" x-model="doctor" checked>
+                        <input type="radio" id="paciente" name="userable" value="patient" x-model="userable" checked>
                         Paciente
                     </label>
 
-                    <template x-if="doctor">
+                    <template x-if='userable === "dogtor"'>
                         <div>
-                            <x-input type="text" name="medicalSpeciality" placeholder="Especialidad médica" />
-                            <x-input type="text" name="medicalCode" placeholder="Código médico" />
+                            <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
+                            <x-input type="text" name="medical_code" placeholder="Código médico" />
+                        </div>
+                    </template>
+
+                    <template x-if='userable === "patient"'>
+                        <div>
+                            <div>
+                                <label for="">
+                                    <input type="radio" name="gender" value="Hombre" placeholder="Genero">
+                                    Hombre
+                                </label>
+                                <label for="">
+                                    <input type="radio" name="gender" value="Mujer" placeholder="Genero">
+                                    Mujer
+                                </label>
+                            </div>
+                            <x-input type="text" name="age" placeholder="Edad" />
+                            <x-input type="text" name="address" placeholder="Dirección" />
+                            <select name="select">
+                                <option value="value3">Soltero/a</option>
+                                <option value="value1">Casado/a</option>
+                                <option value="value3">Unión libre</option>
+                                <option value="value3">Separado/a</option>
+                                <option value="value2">Divorciado/a</option>
+                                <option value="value3">Viudo/a</option>
+                              </select>
+                            <select name="select">
+                                <option value="value1">A+</option>
+                                <option value="value2">A-</option>
+                                <option value="value3">B+</option>
+                                <option value="value3">B-</option>
+                                <option value="value3">AB+</option>
+                                <option value="value3">AB-</option>
+                                <option value="value3">O+</option>
+                                <option value="value3">O-</option>
+                              </select>
                         </div>
                     </template>
                 </div>

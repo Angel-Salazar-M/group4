@@ -10,6 +10,9 @@ use App\Models\MedicalAppointment;
 class Hospital extends Model
 {
     public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
 
     use HasFactory;
 

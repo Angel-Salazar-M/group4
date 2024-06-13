@@ -17,6 +17,10 @@ class Doctor extends Model
 
     public $timestamps = false;
 
+    protected $guarded = [
+        'id',
+    ];
+
     public function user(): MorphOne
     {
         return $this->morphOne(User::class, 'userable');

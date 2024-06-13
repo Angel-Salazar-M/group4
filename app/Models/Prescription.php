@@ -18,6 +18,9 @@ use App\Models\Medicine;
 class Prescription extends Model
 {
     use HasFactory;
+    protected $guarded = [
+        'id',
+    ];
 
     public function doctor(): BelongsTo
     {

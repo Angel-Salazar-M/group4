@@ -14,6 +14,9 @@ use App\Models\Prescription;
 class Medicine extends Model
 {
     public $timestamps = false;
+    protected $guarded = [
+        'id',
+    ];
 
     use HasFactory;
 

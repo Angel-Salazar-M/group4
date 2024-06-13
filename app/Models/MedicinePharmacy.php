@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class MedicinePharmacy extends Pivot
 {
     use HasFactory;
+    protected $guarded = [
+        'id',
+    ];
 }
