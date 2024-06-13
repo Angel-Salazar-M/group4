@@ -13,5 +13,6 @@ class TitleSeeder extends Seeder
     public function run(): void
     {
         //
+        
     }
 }
