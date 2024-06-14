@@ -58,3 +58,15 @@ Route::get('/records', function () {
 Route::get('/prescription/user', function () {
     return view('pantallasPacientes.recetapac');
 });
+
+Route::get('/patient/profile/user', function () {
+    return view('pantallasPacientes.perfilvistapac');
+});
+
+Route::get('/doctor/profile/user', function () {
+    return view('pantallasDoctores.perfilvistadoc');
+});
+
+Route::get('profile/edit', function () {
+    return view('pantallastodos.perfileditar');
+});
