@@ -21,10 +21,11 @@
                 <x-input type="number" name="phoneNumber" placeholder="Número de teléfono" />
                 <x-input type="password" name="password" placeholder="Contraseña" />
 
-                <p>Elige tu tipo de cuenta</p>
+                <p class="font-semibold">Elige tu tipo de cuenta</p>
                 <div x-data="{ userable: '' }">
                     <label>
-                        <input type="radio" id="doctor" @change="console.log(userable)" name="userable" value="dogtor" x-model="userable">
+                        <input type="radio" id="doctor" @change="console.log(userable)" name="userable"
+                            value="dogtor" x-model="userable">
                         Doctor
                     </label>
 
@@ -43,6 +44,7 @@
                     <template x-if='userable === "patient"'>
                         <div>
                             <div>
+                                <p class="font-semibold mt-3">Selecciona tu genero</p>
                                 <label for="">
                                     <input type="radio" name="gender" value="Hombre" placeholder="Genero">
                                     Hombre
@@ -54,24 +56,30 @@
                             </div>
                             <x-input type="text" name="age" placeholder="Edad" />
                             <x-input type="text" name="address" placeholder="Dirección" />
-                            <select name="select">
-                                <option value="value3">Soltero/a</option>
-                                <option value="value1">Casado/a</option>
-                                <option value="value3">Unión libre</option>
-                                <option value="value3">Separado/a</option>
-                                <option value="value2">Divorciado/a</option>
-                                <option value="value3">Viudo/a</option>
-                              </select>
-                            <select name="select">
-                                <option value="value1">A+</option>
-                                <option value="value2">A-</option>
-                                <option value="value3">B+</option>
-                                <option value="value3">B-</option>
-                                <option value="value3">AB+</option>
-                                <option value="value3">AB-</option>
-                                <option value="value3">O+</option>
-                                <option value="value3">O-</option>
-                              </select>
+
+                            <p class="font-semibold">Selecciona tu estado civil</p>
+
+                            <select name="civil_status">
+                                <option value="Soltero/a">Soltero/a</option>
+                                <option value="Casado/a">Casado/a</option>
+                                <option value="Unión libre">Unión libre</option>
+                                <option value="Separado/a">Separado/a</option>
+                                <option value="Divorciado/a">Divorciado/a</option>
+                                <option value="Viudo/a">Viudo/a</option>
+                            </select>
+
+                            <p class="font-semibold mt-3">Selecciona tu tipo de sangre</p>
+
+                            <select name="blood_type">
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
                         </div>
                     </template>
                 </div>

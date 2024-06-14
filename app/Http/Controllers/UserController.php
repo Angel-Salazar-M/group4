@@ -28,10 +28,10 @@ class UserController extends Controller
         }
 
         return back()->withErrors(['email' => 'Credenciales incorrectas', 'password' => 'Credenciales incorrectas']);
-    }
+        }
 
-    public function register(Request $request) {
-
+        public function register(Request $request) {
+            
         $verifiedData = $request->validate([
             'name'=> 'required|min:3',
             'dui' => 'required',
@@ -52,6 +52,7 @@ class UserController extends Controller
             'civil_status' => 'exclude_unless:userable,patient|required',
             'blood_type' => 'exclude_unless:userable,patient|required',
         ]);
+
 
         $user = User::create($verifiedData);
 
