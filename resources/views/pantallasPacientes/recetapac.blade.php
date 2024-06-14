@@ -17,7 +17,7 @@
 
                 <div>
 
-                    <input class="w-full" type="text" name="Prescription" placeholder="prescription">
+                    <input class="w-full break-normal" type="text" name="Prescription" placeholder="prescription"> {{--disabled--}}
 
         </div>
 
