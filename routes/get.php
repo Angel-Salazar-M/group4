@@ -44,7 +44,9 @@ Route::get('/patient/record', function () {
 
 
 Route::get('/doctor/list', function () {
-    return view('pantallasDoctores.patients-list');
+    return view('pantallasDoctores.patients-list', [
+        'patients' => Patients 
+    ]);
 });
 
 Route::get('/patient/prescription', function () {
