@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -36,6 +37,15 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+
+    /**
+     * Accessor for Age.
+     */
+    public function age()
+    {
+        return Carbon::parse($this->attributes['birthday'])->age;
+    }
+    
     protected function casts(): array
     {
         return [

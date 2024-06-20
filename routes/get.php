@@ -2,6 +2,7 @@
 use App\Models\MedicalAppointment;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Patient;
 
 Route::get('/', function () {
     return view('welcome');
@@ -45,7 +46,7 @@ Route::get('/patient/record', function () {
 
 Route::get('/doctor/list', function () {
     return view('pantallasDoctores.patients-list', [
-        'patients' => Patients 
+        'patients' => Patient::with('user')->get(),
     ]);
 });
 
