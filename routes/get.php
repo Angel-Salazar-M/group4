@@ -8,17 +8,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::get('/login', function () {
     return view('LoginRegister.sesion');
 }); //->name("login");
 
 Route::get('/register', function () {
     return view('LoginRegister.registrarse');
-});
-
-Route::get('/prueba', function () {
-    return view('prueba');
 });
 
 Route::get('/register', function () {
@@ -28,11 +23,12 @@ Route::get('/register', function () {
 Route::get('/patient/home', function () {
     return view('Homepages.homep');
 });
+
 Route::get('/doctor/home', function () {
     return view('Homepages.homedoctores', [
         'user' => MedicalAppointment::all()
-    ]
-);
+        ]
+    );
 });
 
 Route::get('/doctor/record', function () {
@@ -42,7 +38,6 @@ Route::get('/doctor/record', function () {
 Route::get('/patient/record', function () {
     return view('pantallasPacientes.vista-expedientepac');
 });
-
 
 Route::get('/doctor/list', function () {
     return view('pantallasDoctores.patients-list', [
@@ -73,3 +68,8 @@ Route::get('/doctor/profile/user', function () {
 Route::get('profile/edit', function () {
     return view('pantallastodos.perfileditar');
 });
+
+Route::get('/prueba', function () {
+    return view('prueba');
+});
+
