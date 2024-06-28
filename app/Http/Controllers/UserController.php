@@ -31,7 +31,7 @@ class UserController extends Controller
         }
 
         public function register(Request $request) {
-            
+
         $verifiedData = $request->validate([
             'name'=> 'required|min:3',
             'dui' => 'required',
@@ -64,7 +64,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Doctor::create($userableData));
                     if($user->save()) {
-                        return redirect('/home/doctores');
+                        return redirect('/doctor/home');
                     }
                     break;
 
@@ -72,7 +72,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Patient::create($userableData));
                     if($user->save()) {
-                        return redirect('/homep');
+                        return redirect('/patient/home');
                     }
                     break;
             }

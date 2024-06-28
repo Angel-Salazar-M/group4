@@ -1,13 +1,18 @@
 <x-layout title="expediente">
-    <x-barra/>
+    <x-barrapac/>
 
     <div class="grid grid-cols-2 h-[calc(100vh-95px)] place-content-center">
 
-        <div class="flex flex-col justify-center items-center border-2 border-[#418BC7] h-96 w-80 mx-auto">
+        <div class="flex flex-col justify-center items-center h-96 w-80 mx-auto">
             <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
                 class="w-36 h-36 rounded-full object-cover">
-            <h1 class="mt-3 font-sans font-bold text-xl">Juan Gabriel Méndez</h1>
-            <h1 class="text-xl font-sans font-bold">expediente</h1>
+            <h1 class="mt-6 font-sans font-bold text-xl">Juan Gabriel Méndez</h1>
+            <h1 class="text-xl font-sans font-bold">perfil</h1>
+            <div class="flex space-x-5">
+                <a href="/register"
+                    class="border-2 mt-6 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+                    Editar perfil</a>
+            </div>
         </div>
 
 
@@ -59,16 +64,6 @@
                         d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
                 </svg>
                 <x-h1>casa numero 45904 en un lugar de multiplaza</x-h1>
-            </div>
-            <div class="flex space-x-5">
-                <a href="/register"
-                    class="border-2 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
-                    Recetas</a>
-            </div>
-            <div class="flex space-x-5">
-                <a href="/register"
-                    class="border-2 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
-                    Historial</a>
             </div>
         </div>
     </div>
