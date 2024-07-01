@@ -1,5 +1,5 @@
 <x-layout title="Prescripción">
-    <x-barra/>
+    <x-barrapac/>
     <div class="w-9/12 border-2 border-black mt-10 mx-auto">
         <div class="mt-4 flex justify-evenly ">
             <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
@@ -24,13 +24,13 @@
                 <div class="mx-auto col-start-2">
                     <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
                         class="w-20 h-20 rounded-full object-cover">
-                    <h1 class="text-center text-sm">Firma y sello <br>del médico </h1>
+                    <h1 class="text-center text-sm font-semibold">Firma y sello <br>del médico </h1>
                 </div>
             </div>
         </div>
         <div class="pb-10 mr-10 flex justify-end">
             <button
-            class="border-2 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+            class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#a885b4] focus:border-gray-600">
             Guardar</a>
             </button>
     </div>

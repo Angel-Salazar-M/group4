@@ -10,7 +10,7 @@
             <h1 class="text-xl font-sans font-bold">perfil</h1>
             <div class="flex space-x-5">
                 <a href="/register"
-                    class="border-2 mt-6 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+                    class="border-2 mt-6 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-52 h-12 py-2 rounded-lg text-white hover:bg-[#a885b4] focus:border-gray-600">
                     Editar perfil</a>
             </div>
         </div>

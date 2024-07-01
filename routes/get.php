@@ -44,7 +44,7 @@ Route::get('/doctor/list', function () {
 
 });
 
-Route::get('/patient/prescription', function () {
+Route::get('/patient/prescriptions', function () {
     return view('pantallasPacientes.recetaspac');
 });
 
