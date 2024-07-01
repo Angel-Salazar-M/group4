@@ -73,3 +73,6 @@ Route::get('/prueba', function () {
     return view('prueba');
 });
 
+Route::get('/doctor/history/new', function () {
+    return view('pantallasDoctores.nuevoHistorial');
+});
