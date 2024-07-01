@@ -40,9 +40,8 @@ Route::get('/patient/record', function () {
 });
 
 Route::get('/doctor/list', function () {
-    return view('pantallasDoctores.patients-list', [
-        'patients' => Patient::with('user')->get(),
-    ]);
+    return view('pantallasDoctores.patients-list');
+
 });
 
 Route::get('/patient/prescription', function () {

@@ -12,6 +12,10 @@ class PrescriptionSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $prescription = [
+            [
+                
+            ]
+        ];
     }
 }
