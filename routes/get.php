@@ -35,8 +35,10 @@ Route::get('/doctor/home', function () {
 );
 });
 
-Route::get('/doctor/record', function () {
-    return view('pantallasDoctores.vista-expedientedoc');
+Route::get('/doctor/record/{patient}', function (Patient $patient) {
+    return view('pantallasDoctores.vista-expedientedoc', [
+        'patient' => $patient
+    ]);
 });
 
 Route::get('/patient/record', function () {
