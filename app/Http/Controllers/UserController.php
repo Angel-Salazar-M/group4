@@ -19,11 +19,12 @@ class UserController extends Controller
             'password' => 'required',
 
         ]);
+
         if (Auth::attempt($credentials)) {
             if (Auth::user()->userable instanceof Doctor) {
-                return redirect('/home/doctores');
+                return redirect('/doctor/home');
             } else {
-                return redirect('/homep');
+                return redirect('/patient/home');
             }
         }
 

@@ -3,6 +3,7 @@ use App\Models\MedicalAppointment;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Patient;
+use App\Models\Doctor;
 
 Route::get('/', function () {
     return view('welcome');
@@ -37,8 +38,10 @@ Route::get('/doctor/record/{patient}', function (Patient $patient) {
     ]);
 });
 
-Route::get('/patient/record', function () {
-    return view('pantallasPacientes.vista-expedientepac');
+Route::get('/patient/record', function (Patient $patient) {
+    return view('pantallasPacientes.vista-expedientepac', [
+        'patient' => $patient->with('user')->first()
+    ]);
 });
 
 Route::get('/doctor/list', function () {
@@ -46,8 +49,10 @@ Route::get('/doctor/list', function () {
 
 });
 
-Route::get('/patient/prescriptions', function () {
-    return view('pantallasPacientes.recetaspac');
+Route::get('/patient/prescriptions', function (Doctor $doctor) {
+    return view('pantallasPacientes.recetaspac', [
+        'doctor' => $doctor->with('user')->first()
+    ]);
 });
 
 Route::get('/doctor/history', function () {
