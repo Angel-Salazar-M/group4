@@ -3,7 +3,7 @@
 
     <div class="grid grid-cols-2 h-[calc(100vh-95px)] place-content-center">
 
-        <div class="flex flex-col justify-center items-center border-2 border-[#418BC7] h-96 w-80 mx-auto">
+        <div class="flex flex-col justify-center items-center border-2 border-[#B394BD] h-96 w-80 mx-auto">
             <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
                 class="w-36 h-36 rounded-full object-cover">
             <h1 class="mt-3 font-sans font-bold text-xl">Juan Gabriel Méndez</h1>
@@ -62,12 +62,12 @@
             </div>
             <div class="flex space-x-5">
                 <a href="/register"
-                    class="border-2 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+                    class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#a885b4] focus:border-gray-600">
                     Recetas</a>
             </div>
             <div class="flex space-x-5">
                 <a href="/register"
-                    class="border-2 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+                    class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#a885b4] focus:border-gray-600">
                     Historial</a>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <x-layout title="expediente">
-    <x-barrapac/>
+    <x-barrasola/>
 
     <div class="grid grid-cols-2 h-[calc(100vh-95px)] place-content-center">
 
@@ -9,9 +9,10 @@
             <h1 class="mt-6 font-sans font-bold text-xl">Juan Gabriel Méndez</h1>
             <h1 class="text-xl font-sans font-bold">perfil</h1>
             <div class="flex space-x-5">
-                <a href="/register"
-                    class="border-2 mt-6 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
-                    Guardar</a>
+                <button
+                class="border-2 mt-6 font-sans font-semibold border-white bg bg-[#72A9D7] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
+                Guardar</a>
+                </button>
             </div>
         </div>
 
@@ -34,7 +35,7 @@
                 </svg>
                 <input type="text" placeholder="correo electrónico">
             </div>
-            <div class="flex space-x-5 justify-items-center">
+            <div class="flex space-x-5 justify-items-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
@@ -42,7 +43,7 @@
                 </svg>
                 <input type="text" placeholder="correo electrónico">
             </div>
-            <div class="flex space-x-5 justify-items-center">
+            <div class="flex space-x-5 justify-items-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
@@ -50,7 +51,7 @@
                 </svg>
                 <input type="text" placeholder="correo electrónico">
             </div>
-            <div class="flex space-x-5 justify-items-center">
+            <div class="flex space-x-5 justify-items-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
@@ -58,7 +59,7 @@
                 </svg>
                 <input type="text" placeholder="correo electrónico">
             </div>
-            <div class="flex space-x-5 justify-items-center col-span-2">
+            <div class="flex space-x-5 justify-items-center col-span-2 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
