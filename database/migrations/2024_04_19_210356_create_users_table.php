@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('dui')->nullable();
             $table->date('birthday');
-            $table->integer('phoneNumber');
+            $table->string('phoneNumber');
             $table->string('password');
             $table->string('email')->unique();
             $table->nullableMorphs('userable');

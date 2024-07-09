@@ -34,7 +34,7 @@ class UserSeeder extends Seeder
             'birthday' => '10/10/10',
             'phoneNumber' => '1234-5678',
             'password' => 'MaytheEsUnPescado',
-            'email' => 'josesitoo0608@gmail.com',
+            'email' => 'josesitoo060@gmail.com',
         ]);
     }
 }
