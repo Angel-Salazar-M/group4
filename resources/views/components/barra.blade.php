@@ -4,7 +4,7 @@
 </div>
 <div class="bg-[#418BC7] flex justify-start font-sans text-white space-x-5">
 <a href="" class="mt-3 mb-2 font-bold ml-5">HISTORIALES MÉDICOS</a>
-<a href="" class="mt-3 mb-2 font-bold">RECETAS MÉDICAS</a>
-<a href="/doctor/list" class="mr-4 mb-2 mt-3 font-bold">PACIENTES</a>
+<a href="/doctor/prescriptions" class="mt-3 mb-2 font-bold">RECETAS MÉDICAS</a>
+<a href="/doctor/records" class="mr-4 mb-2 mt-3 font-bold">PACIENTES</a>
 </div>
 

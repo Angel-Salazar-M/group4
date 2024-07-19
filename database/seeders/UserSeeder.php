@@ -20,21 +20,21 @@ class UserSeeder extends Seeder
             'medical_speciality' => 'Inmunología',
             'medical_code' => '32578',
         ]), 'userable')->create([
-            'name' => 'Angel',
+            'name' => 'Pedro',
             'dui' => '12345678-9',
             'birthday' => '14/10/10',
             'phoneNumber' => '1234-5678',
-            'password' => 'MaytheEsUnPescado',
-            'email' => 'josesitoo0608@gmail.com',
+            'password' => 'password',
+            'email' => 'doctor@example.com',
         ]);
 
         User::factory()->for(Patient::factory(), 'userable')->create([
-            'name' => 'Angel',
+            'name' => 'Juan',
             'dui' => '12345678-9',
             'birthday' => '10/10/10',
             'phoneNumber' => '1234-5678',
-            'password' => 'MaytheEsUnPescado',
-            'email' => 'josesitoo060@gmail.com',
+            'password' => 'password',
+            'email' => 'patient@example.com',
         ]);
     }
 }

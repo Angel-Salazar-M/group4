@@ -69,7 +69,7 @@ Route::get('/patient/profile/user', function () {
  *  D O C T O R  R O U T E S
 */
 
-Route::get('/doctor/home', function () {
+Route::get('/doctor/info', function () {
     return view('Homepages.homedoctores', [
         'user' => MedicalAppointment::all()
         ]
@@ -82,19 +82,24 @@ Route::get('/doctor/record/{patient}', function (Patient $patient) {
     ]);
 });
 
-Route::get('/doctor/list', function () {
-    return view('pantallasDoctores.patients-list');
-
+Route::get('/doctor/records', function () {
+    return view('pantallasDoctores.patients-list', [
+        'patients' => Patient::all()->load('user')
+    ]);
 });
 
 Route::get('/doctor/history', function () {
     return view('pantallasDoctores.Datosdehistorialdoc');
 });
 
-Route::get('/doctor/profile/user', function () {
+Route::get('/doctor/profile', function () {
     return view('pantallasDoctores.perfilvistadoc');
 });
 
 Route::get('/doctor/history/new', function () {
     return view('pantallasDoctores.nuevoHistorial');
+});
+
+Route::get('/doctor/prescriptions', function () {
+    return view('pantallasDoctores.recetasmedicasdoc');
 });

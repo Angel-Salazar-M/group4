@@ -22,7 +22,7 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
             if (Auth::user()->userable instanceof Doctor) {
-                return redirect('/doctor/home');
+                return redirect('/doctor/info');
             } else {
                 return redirect('/patient/home');
             }
@@ -65,7 +65,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Doctor::create($userableData));
                     if($user->save()) {
-                        return redirect('/doctor/home');
+                        return redirect('/doctor/info');
                     }
                     break;
 
