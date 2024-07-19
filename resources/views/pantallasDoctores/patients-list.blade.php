@@ -3,8 +3,8 @@
 
     <div class="flex justify-between">
         <input type="text" name="buscador" placeholder="Buscar..."
-            class="ml-6 mt-6 border-2 border-[#76ABD7]  px-2 py-1 w-96">
-        <button class="border-2 bg-[#76ABD7] rounded-full mt-6 mr-6 py-2 px-10" @click="modal = !modal"
+            class="ml-6 mt-6 border-2 border-[#B394BD]  px-2 py-1 w-96">
+        <button class="border-2 bg-[#B394BD] rounded-full mt-6 mr-6 py-2 px-10" @click="modal = !modal"
             :aria-expanded="modal ? 'true' : 'false'"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                 viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                 <path
@@ -12,24 +12,24 @@
             </svg></svg></button>
     </div>
     <div class="mt-10 flex justify-center mx-5">
-        <table class="border-2 border-black py-2 px-14">
-            <thead class="border-2 border-black py-2 px-14">
-                <th class="border-2 border-black py-2 px-14">NOMBRES</th>
-                <th class="border-2 border-black py-2 px-14">DUI</th>
-                <th class="border-2 border-black py-2 px-14">EDAD</th>
-                <th class="border-2 border-black py-2 px-14">ESTADO CIVIL</th>
+        <table class="border-2 border-bg-[#5BBEA6] py-2 px-14">
+            <thead class="border-2 border-[#5BBEA6] py-2 px-14">
+                <th class="border-2 border-[#5BBEA6] py-2 px-14">NOMBRES</th>
+                <th class="border-2 border-[#5BBEA6] py-2 px-14">DUI</th>
+                <th class="border-2 border-[#5BBEA6] py-2 px-14">EDAD</th>
+                <th class="border-2 border-[#5BBEA6] py-2 px-14">ESTADO CIVIL</th>
             </thead>
-            <tbody class="border-2 border-black py-2 px-14">
+            <tbody class="border-2 border-[#5BBEA6] py-2 px-14">
                 @foreach ($patients as $patient)
                     <tr>
-                        <td class="border-2 border-black py-2 px-14 text-center">
+                        <td class="border-2 border-[#5BBEA6] py-2 px-14 text-center">
                             <a href="/doctor/record/{{ $patient->id }}">
                                 {{ $patient->user->name }}
                             </a>
                         </td>
-                        <td class="border-2 border-black py-2 px-14 text-center"> {{ $patient->user->dui }} </td>
-                        <td class="border-2 border-black py-2 px-14 text-center"> {{ $patient->user->age() }} </td>
-                        <td class="border-2 border-black py-2 px-14 text-center"> {{ $patient->civil_status }} </td>
+                        <td class="border-2 border-[#5BBEA6] py-2 px-14 text-center"> {{ $patient->user->dui }} </td>
+                        <td class="border-2 border-[#5BBEA6] py-2 px-14 text-center"> {{ $patient->user->age() }} </td>
+                        <td class="border-2 border-[#5BBEA6] py-2 px-14 text-center"> {{ $patient->civil_status }} </td>
                     </tr>
                 @endforeach
             </tbody>
