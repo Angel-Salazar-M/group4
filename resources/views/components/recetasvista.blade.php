@@ -6,7 +6,7 @@
     <div class="grid grid-cols-3 place-content-center border-2 border-black py-8 w-full mx-auto rounded-3xl">
         <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
             class=" w-20 h-20 rounded-full object-cover mx-auto">
-        <h1 class="font-bold font-sans my-auto">{{$patient->user->name}}<br>Identificación:{{$id}}</h1>
-        <h1 class="font-bold font-sans my-auto">Doctor: {{$doctor->user->name}}</h1>
+        <h1 class="font-bold font-sans my-auto"> <br>Identificación:{{$id}}</h1>
+        <h1 class="font-bold font-sans my-auto">Doctor: </h1>
     </div>
 </div>
