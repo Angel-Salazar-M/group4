@@ -17,10 +17,6 @@ Route::get('/register', function () {
     return view('LoginRegister.registrarse');
 });
 
-Route::get('/register', function () {
-    return view('LoginRegister.registrarse');
-});
-
 Route::get('profile/edit', function () {
     return view('pantallastodos.perfileditar');
 });
