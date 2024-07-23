@@ -68,12 +68,12 @@
                 <x-h1>{{ $patient->blood_type }}</x-h1>
             </div>
             <div class="flex space-x-5">
-                <a href="/register"
+                <a href="/doctor/prescriptions"
                     class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
                     Recetas</a>
             </div>
             <div class="flex space-x-5">
-                <a href="/register"
+                <a href="/doctor/history"
                     class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white hover:bg-[#5891bf] focus:border-gray-600">
                     Historial</a>
             </div>
