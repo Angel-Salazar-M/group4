@@ -6,7 +6,13 @@ export default {
       "./resources/**/*.vue",
     ],
     theme: {
-      extend: {},
+      extend: {
+        backgroundImage: {
+            'register': "url('/public/img/chivo.png')",
+            'footer-texture': "url('/img/footer-texture.png')",
+          },
+
+      },
     },
     plugins: [],
   }
