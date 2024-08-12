@@ -19,6 +19,7 @@
             <h1 class="flex justify-center flex-row mt-6">Medicación: <textarea class="border-2 rounded-md border-[#B394BD] " name="medicación" cols="30" rows="2" placeholder="ola"></textarea> </h1>
             <h1 class="flex justify-center flex-row mt-6">Dosificación: <textarea class="border-2 rounded-md border-[#B394BD] " name="diagnóstico" cols="30" rows="2" placeholder="ola"></textarea> </h1>
             <h1 class="flex flex-row justify-evenly col-span-2 mt-6 mb-10">Anotaciones: <textarea class="border-2 col-span-2 rounded-md border-[#B394BD] w-5/6" name="diagnóstico" cols="30" rows="3" placeholder="ola"></textarea></h1>
+            <input type="date" class="col-span-2 flex justify-center">
             <div class="bg-[#B394BD] font-sans text-white space-x-8 h-14 flex justify-around items-center mt-10 col-span-2">
                 <h1 class="mt-3 mb-2 font-bold ml-5>">CONTACTOS:</h1>
                 <h1 class="mt-3 mb-2 font-bold ml-5>">1234-5678</h1>
