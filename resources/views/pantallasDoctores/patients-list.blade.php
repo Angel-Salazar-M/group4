@@ -23,7 +23,7 @@
             </svg>
         </button>
         <template x-if='modal === false'>
-            <div class="absolute container bg-white w-screen grid place-items-center h-screen">
+            <div class="absolute container bg-white w-full grid place-items-center">
 
                 {{-- left-[calc(50%-120px)] --}}
 
