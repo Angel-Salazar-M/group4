@@ -4,7 +4,7 @@
     <div class="grid grid-cols-2 h-[calc(100vh-95px)] place-content-center">
 
         <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto">
-            <img src="https://images7.memedroid.com/images/UPLOADED766/639a22bcc8861.jpeg"
+            <img src=https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg
                 class="w-36 h-36 rounded-full object-cover">
             <h1 class="mt-6 font-sans font-bold text-xl">{{ $patient->user->name }}</h1>
             <h1 class="text-xl font-sans font-bold">expediente</h1>
@@ -62,7 +62,7 @@
             <div class="flex space-x-5">
                 <a href="/doctor/prescriptions"
                     class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white focus:border-gray-600">
-                    Recetas</a>
+                    Citas médicas</a>
             </div>
             <div class="flex space-x-5">
                 <a href="/doctor/history"
@@ -75,6 +75,8 @@
         <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10">
     </div>
     <div class=>
+    <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
+
     <input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
 <x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
 <x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
@@ -88,9 +90,9 @@
 <div class="border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5">
     <div class="">
 
-        <div class="grid grid-cols-2 space-x-5 space-y-10 mb-5">
+        <div class="grid grid-cols-2 space-x-5 space-y-10 mb-5 place-items-center">
             <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5">HISTORIAL MÉDICO</h1>
-            <div class="col-span-2 flex space-x-5 justify-items-center items-center ml-5">
+            <div class="col-span-2 flex space-x-5 justify-items-center items-center ml-5 col-start-1">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
@@ -138,7 +140,7 @@
                 </svg>
                 <x-h1>Dirección: {{ $patient->address }}</x-h1>
             </div>
-            <div class="flex space-x-5 justify-items-center col-span-2">
+            <div class="flex space-x-5 justify-items-center ">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
                     <path
@@ -146,17 +148,31 @@
                 </svg>
                 <x-h1>Tipo sanguíneo: {{ $patient->blood_type }}</x-h1>
             </div>
-            <div class="flex space-x-5 justify-items-center col-span-2">
+            <div class="flex space-x-5 justify-items-center ">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
                 <x-h1>Último examen físico: {{ $patient->blood_type }}</x-h1>
             </div>
-            <div class="flex space-x-5 justify-items-center col-span-2">
+            <div class="flex space-x-5 justify-items-center ">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M87-556q26-140 135.5-232T480-880q74 0 139.5 24T737-788q-14 26-22.5 44.5T703-709q-44-42-101-66.5T480-800q-101 0-181 56.5T183-599q-27-1-52.5 10T87-556ZM480-80q-148 0-257.5-92T87-404q17 22 42.5 33.5T183-360q36 88 116 144t181 56q133 0 226.5-93.5T800-480q0-17-1.5-34t-5.5-34q11 4 22.5 6t24.5 2q9 0 18-1t17-3q2 16 3.5 31.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM336-496l84-84-85-85-42 42 43 42-43 43 43 42Zm504-104q-33 0-56.5-23.5T760-680q0-27 15-57.5T840-840q50 72 65 102.5t15 57.5q0 33-23.5 56.5T840-600ZM625-495l43-43-43-43 42-42-42-42-85 85 85 85Zm-145 75q-26 0-50.5 6T383-397l-143-83q0-16-8-30t-22-22q-22-12-45.5-5.5T128-510q-12 22-5.5 45.5T150-428q14 8 30 8t30-8l119 69q-17 17-30.5 36.5T276-280h66q21-36 57-58t81-22q45 0 81 22t57 58h66q-24-62-78.5-101T480-420Zm0-60Z"/></svg>
-                <x-h1>Enfermedades: {{ $patient->blood_type }}</x-h1>
+                <x-h1>Enfermedades recientes: {{ $patient->blood_type }}</x-h1>
             </div>
-            <div class="flex space-x-5 justify-items-center col-span-2">
+            <div class="flex space-x-5 justify-items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M87-556q26-140 135.5-232T480-880q74 0 139.5 24T737-788q-14 26-22.5 44.5T703-709q-44-42-101-66.5T480-800q-101 0-181 56.5T183-599q-27-1-52.5 10T87-556ZM480-80q-148 0-257.5-92T87-404q17 22 42.5 33.5T183-360q36 88 116 144t181 56q133 0 226.5-93.5T800-480q0-17-1.5-34t-5.5-34q11 4 22.5 6t24.5 2q9 0 18-1t17-3q2 16 3.5 31.5T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM336-496l84-84-85-85-42 42 43 42-43 43 43 42Zm504-104q-33 0-56.5-23.5T760-680q0-27 15-57.5T840-840q50 72 65 102.5t15 57.5q0 33-23.5 56.5T840-600ZM625-495l43-43-43-43 42-42-42-42-85 85 85 85Zm-145 75q-26 0-50.5 6T383-397l-143-83q0-16-8-30t-22-22q-22-12-45.5-5.5T128-510q-12 22-5.5 45.5T150-428q14 8 30 8t30-8l119 69q-17 17-30.5 36.5T276-280h66q21-36 57-58t81-22q45 0 81 22t57 58h66q-24-62-78.5-101T480-420Zm0-60Z"/></svg>
+                <x-h1>Enfermedades crónicas: {{ $patient->blood_type }}</x-h1>
+            </div>
+            <div class="col-span-2 flex space-x-5 justify-items-center items-center ml-5 col-start-1">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M496-346 346-496l332-332q12-12 28.5-12t28.5 12l93 93q12 12 12 28.5T828-678L496-346Zm0-114 248-247-37-37-247 248 36 36Zm-56 340 80-80h360v80H440Zm-237 0q-46 0-88.5-18T40-188l265-264 104 104q14 14 22 32t8 38q0 20-8 38.5T409-207l-19 19q-32 32-74.5 50T227-120h-24Zm0-80h24q30 0 58-11.5t49-32.5l19-19q6-6 6-14t-6-14l-48-48-136 135q8 2 17 3t17 1Zm541-507-37-37 37 37ZM305-339Z"/></svg>
-                <x-h1>Operaciones: {{ $patient->blood_type }}</x-h1>
+                <x-h1>Operaciones recientes: {{ $patient->blood_type }}</x-h1>
             </div>
 </div>
+<div>
+    <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mt-24 mb-10">
+    <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5">CITAS MÉDICAS RECIENTES</h1>
+</div>
+<input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
+
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+    </div>
+</div>
+<x-barrafinal/>
 </x-layout>

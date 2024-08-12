@@ -1,9 +1,9 @@
-<div class="flex justify-between mb-2">
-    <h1 class="font-sans mt-4 ml-6 font-bold">SV-HEALTH</h1>
-    <a href="/patient/profile/user" class="font-sans mt-4 mr-6 text-right text-[#B394BD] font-bold">PERFIL</a>
-</div>
-<div class="bg-[#5BBEA6] font-sans text-white space-x-8 h-16 flex items-center">
-<a href="/patient/prescriptions" class="mt-3 mb-2 font-bold ml-5">MIS RECETAS</a>
-<a href="/patient/record" class="mt-3 mb-2 font-bold">MI EXPEDIENTE</a>
+<div class="bg-[#B394BD] font-sans text-white space-x-8 h-16 flex items-center">
+    <h1 class="mt-3 mb-2 font-bold ml-5">SCRIPTGO</h1>
+    <div class="flex justify-end w-full">
+        <a href="/doctor/prescriptions" class="mt-3 mb-2 font-bold ml-8 mr-6 space-x-8 text-right">RECETAS MÉDICAS</a>
+        <a href="/doctor/records" class="mb-2 mt-3 font-bold space-x-8 ml-8 mr-6 text-right">CITAS MÉDICAS</a>
+        <a href="/doctor/profile" class=""><img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png class="w-8 h-8 rounded-full object-cover mt-2 font-bold text-right mr-8 ml-5"></a>
+    </div>
 </div>
 

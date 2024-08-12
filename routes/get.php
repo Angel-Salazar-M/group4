@@ -97,5 +97,9 @@ Route::get('/doctor/history/new', function () {
 });
 
 Route::get('/doctor/prescriptions', function () {
-    return view('pantallasDoctores.recetasmedicasdoc');
+    return view('pantallasDoctores.Citasmedicaslistadoc');
+});
+
+Route::get('/doctor/prescriptions/new', function () {
+    return view('pantallasDoctores.Nuevacitamedicadoc');
 });
