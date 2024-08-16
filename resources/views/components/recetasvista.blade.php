@@ -1,4 +1,4 @@
-<div class=" grid grid-cols-1 mt-4 space-y-3 mx-32 mb-5">
+<div class=" grid grid-cols-1 space-y-3 mx-32 mb-5">
     <input type="date" name="fecha de creación" placeholder="fecha de creación"
         class="font-bold font-sans  w-32"> {{-- disabled, timestamp --}}
 

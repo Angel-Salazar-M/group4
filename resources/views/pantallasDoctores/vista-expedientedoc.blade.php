@@ -72,7 +72,7 @@
         </div>
     </div>
     <div>
-        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10">
+        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10 mt-20">
     </div>
     <div class=>
     <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5" id="citasMedicas">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
