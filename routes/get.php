@@ -44,7 +44,7 @@ Route::get('/patient/record', function (Patient $patient) {
 });
 
 Route::get('/patient/prescriptions', function ( Patient $patient ) {
-    return view('pantallasPacientes.recetaspac', [
+    return view('pantallasPacientes.Citasmedicaslistapac', [
         'patients' => $patient->with('user')->first(),
     ]);
 });
@@ -64,7 +64,7 @@ Route::get('/patient/profile/user', function () {
 /**
  *  D O C T O R  R O U T E S
 */
-
+// pendiente
 Route::get('/doctor/info', function () {
     return view('Homepages.homedoctores', [
         'user' => MedicalAppointment::all()
