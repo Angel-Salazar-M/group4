@@ -3,14 +3,14 @@
 
     <div class="grid grid-cols-2 h-[calc(100vh-95px)] place-content-center">
 
-        <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto">
+        <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto mt-20">
             <img src=https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg
                 class="w-36 h-36 rounded-full object-cover">
             <h1 class="mt-6 font-sans font-bold text-xl">{{ $patient->user->name }}</h1>
             <h1 class="text-xl font-sans font-bold">expediente</h1>
         </div>
 
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-20">
             <div class="col-span-2 flex space-x-5 justify-items-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
@@ -60,22 +60,22 @@
                 <x-h1>{{ $patient->address }}</x-h1>
             </div>
             <div class="flex space-x-5">
-                <a href="/doctor/prescriptions"
+                <a href="#citasMedicas"
                     class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white focus:border-gray-600">
                     Citas médicas</a>
             </div>
             <div class="flex space-x-5">
-                <a href="/doctor/history"
+                <a href="#historialMedico"
                     class="border-2 font-sans font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white focus:border-gray-600">
                     Historial</a>
             </div>
         </div>
     </div>
     <div>
-        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10">
+        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10 mt-20">
     </div>
     <div class=>
-    <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
+    <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5" id="citasMedicas">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
 
     <input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
 <x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
@@ -91,7 +91,7 @@
     <div class="">
 
         <div class="grid grid-cols-2 space-x-5 space-y-10 mb-5 place-items-center">
-            <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5">HISTORIAL MÉDICO</h1>
+            <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5" id="historialMedico">HISTORIAL MÉDICO</h1>
             <div class="col-span-2 flex space-x-5 justify-items-center items-center ml-5 col-start-1">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#000000">
