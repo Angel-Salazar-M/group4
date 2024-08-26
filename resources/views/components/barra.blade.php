@@ -1,4 +1,4 @@
-<div class="bg-[#B394BD] font-sans text-white space-x-8 h-16 flex items-center fixed w-full z-40">
+<div class="bg-[#B394BD] font-sans text-white space-x-8 h-16 flex items-center w-full z-40 mb-10">
     <h1 class="mt-3 mb-2 font-bold ml-5">SCRIPTGO</h1>
     <div class="flex justify-end w-full">
         <a href="/doctor/prescriptions" class="mt-3 mb-2 font-bold ml-8 mr-6 space-x-8 text-right">RECETAS MÉDICAS</a>
