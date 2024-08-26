@@ -1,4 +1,4 @@
-<div class="mt-10 grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5 p-6 ">
+<div class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5 p-6 bg-fondo ">
         <div class="flex ml-5 mt-5">
             <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
                 class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">

@@ -10,6 +10,8 @@ export default {
         backgroundImage: {
             'register': "url('/public/img/chivo.png')",
             'footer-texture': "url('/img/footer-texture.png')",
+            'fondo': "url('/public/img/logo.png')",
+
           },
 
       },
