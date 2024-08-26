@@ -76,17 +76,17 @@ Route::get('/doctor/record/{patient}', function (Patient $patient) {
     return view('pantallasDoctores.vista-expedientedoc', [
         'patient' => $patient
     ]);
-});
+}); //hechooooo
 
 Route::get('/doctor/records', function () {
     return view('pantallasDoctores.patients-list', [
         'patients' => Patient::all()->load('user')
     ]);
-});
+}); //pendiente modal
 
 Route::get('/doctor/history', function () {
     return view('pantallasDoctores.Datosdehistorialdoc');
-});
+});//pendiente tal vez borrar
 
 Route::get('/doctor/profile', function () {
     return view('pantallasDoctores.perfilvistadoc');
