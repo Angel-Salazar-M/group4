@@ -1,4 +1,4 @@
-<div class="mt-10 grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5 p-6 ">
+<div class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5 p-6">
         <div class="flex ml-5 mt-5">
             <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
                 class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
@@ -8,7 +8,7 @@
                 <h1 class="font-bold"> Pediatra</h1>
             </div>
         </div>
-    <h1 class="grid-col-start-2 text-right mr-10 mt-5 font-bold">Número único profesional: 0123 456 7899</h1>
+    <h1 class="grid-col-start-2 text-right mr-10 mt-10 font-bold">Número único profesional: 0123 456 7899</h1>
     <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
     <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
     <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>

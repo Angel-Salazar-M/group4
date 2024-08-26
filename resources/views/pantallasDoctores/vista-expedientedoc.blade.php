@@ -78,11 +78,11 @@
     <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5" id="citasMedicas">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
 
     <input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
-<x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
-<x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
-<x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
-<x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
-<x-recetasvistadoc nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
     </div>
     <div>
         <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mt-24 mb-10">
@@ -169,9 +169,13 @@
     <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mt-24 mb-10">
     <h1 class="font-sans text-2xl font-bold text-center col-span-2 mt-5 mb-5">CITAS MÉDICAS RECIENTES</h1>
 </div>
-<input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto mb-10">
+<input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
 
+<<<<<<< Updated upstream
 <x-citavista/>
+=======
+<x-recetasvista nombre="Ola" id="1213213" doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj"/>
+>>>>>>> Stashed changes
     </div>
 </div>
 <x-footer/>
