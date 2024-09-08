@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Patient;
 use App\Models\Doctor;
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
