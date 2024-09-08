@@ -28,7 +28,7 @@
                             <dt class="text-base font-semibold leading-7 text-gray-900">
                                 <div>
                                     <div><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                            width="48px" fill="#64BEB6">
+                                            width="48px" fill="#6DB5FE">
                                             <path
                                                 d="M222-214 80-356l42-42 100 99 179-179 42 43-221 221Zm0-320L80-676l42-42 100 99 179-179 42 43-221 221Zm298 244v-60h360v60H520Zm0-320v-60h360v60H520Z" />
                                         </svg></div>
@@ -41,7 +41,7 @@
                             <dt class="text-base font-semibold leading-7 text-gray-900">
                                 <div>
                                     <div><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                            width="48px" fill="#64BEB6">
+                                            width="48px" fill="#6DB5FE">
                                             <path
                                                 d="M360-860v-60h240v60H360Zm90 447h60v-230h-60v230Zm30 332q-74 0-139.5-28.5T226-187q-49-49-77.5-114.5T120-441q0-74 28.5-139.5T226-695q49-49 114.5-77.5T480-801q67 0 126 22.5T711-716l51-51 42 42-51 51q36 40 61.5 97T840-441q0 74-28.5 139.5T734-187q-49 49-114.5 77.5T480-81Zm0-60q125 0 212.5-87.5T780-441q0-125-87.5-212.5T480-741q-125 0-212.5 87.5T180-441q0 125 87.5 212.5T480-141Zm0-299Z" />
                                         </svg></div>
@@ -55,7 +55,7 @@
                             <dt class="text-base font-semibold leading-7 text-gray-900">
                                 <div>
                                     <div><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                            width="48px" fill="#64BEB6">
+                                            width="48px" fill="#6DB5FE">
                                             <path
                                                 d="M240-40H120q-33 0-56.5-23.5T40-120v-120h80v120h120v80Zm480 0v-80h120v-120h80v120q0 33-23.5 56.5T840-40H720ZM480-220q-120 0-217.5-71T120-480q45-118 142.5-189T480-740q120 0 217.5 71T840-480q-45 118-142.5 189T480-220Zm0-80q88 0 161-48t112-132q-39-84-112-132t-161-48q-88 0-161 48T207-480q39 84 112 132t161 48Zm0-40q58 0 99-41t41-99q0-58-41-99t-99-41q-58 0-99 41t-41 99q0 58 41 99t99 41Zm0-80q-25 0-42.5-17.5T420-480q0-25 17.5-42.5T480-540q25 0 42.5 17.5T540-480q0 25-17.5 42.5T480-420ZM40-720v-120q0-33 23.5-56.5T120-920h120v80H120v120H40Zm800 0v-120H720v-80h120q33 0 56.5 23.5T920-840v120h-80ZM480-480Z">
                                             </path>
@@ -70,7 +70,7 @@
                             <dt class="text-base font-semibold leading-7 text-gray-900">
                                 <div>
                                     <div><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-                                            width="48px" fill="#64BEB6">
+                                            width="48px" fill="#6DB5FE">
                                             <path
                                                 d="M440-200h80v-120h120v-80H520v-120h-80v120H320v80h120v120ZM240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm120-480h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
                                         </svg></div>
@@ -86,7 +86,7 @@
         </div>
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-2 lg:px-6">
             <div class="space-y-8 my-16 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">
-                <h2 class="col-span-2 text-4xl tracking-tight font-extrabold text-scriptazul">Misión y visión</h2>
+                <h2 class="col-span-2 text-4xl tracking-tight font-extrabold text-scriptverde">Misión y visión</h2>
                 <div>
                     <div class="flex items-center">
                         <div
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <footer class="bg-scriptazul w-full pt-10 pb-4 text-center text-sm text-black">
+        <footer class="bg-scriptazul w-full pt-10 pb-4 text-center text-sm text-black shadow-md">
             <div class="px-6 lg:px-8 text-center">
                 <h1 class="text-4xl text-center font-bold tracking-tight sm:text-5xl text-white"> Salud y tecnología en
                     perfecta harmonía </h1>

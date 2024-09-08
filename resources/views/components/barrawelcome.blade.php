@@ -16,7 +16,7 @@
                     </div>
                 </a><a
                     class="inline-flex items-center px-2 pt-1 border-b-2 border-transparent text-sm font-normal leading-5 hover:border-gray-700 focus:outline-none focus:text-black transition duration-150 ease-in-out"
-                    href="https://2toring.superatepoma.org/register">
+                    href="/register">
                     <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                             <path
