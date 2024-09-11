@@ -21,8 +21,10 @@ Route::get('profile/edit', function () {
     return view('pantallastodos.perfileditar');
 });
 
-Route::get('/prueba', function () {
-    return view('prueba');
+Route::get('/prueba', function (Patient $patient) {
+    return view('prueba', [
+    'patient' => $patient->with('user')->first()
+    ]);
 });
 
 
