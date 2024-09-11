@@ -1,14 +1,6 @@
 <x-layout title="Home 1">
     <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-register">
-        <div class="w-full h-full flex-col ">
-            <h1 class="text-4xl text-black text-center font-sans font-semibold">¡Bienvenido!</h1>
-            <p class="text-center mt-6 font-sans text-black mb-4">Si ya tienes una cuenta, <br>accede a ella aquí con tu
-                información personal.
-            </p>
-            <a href="login"
-                class="flex items-center border-2 font-serif border-white bg bg-[#72A9D7] h-12 w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600 text-center">Iniciar
-                sesión</a>
-        </div>
+
         <div class="grid content-center justify-items-center">
             <h1 class="text-4xl text-black text-center font-sans mb-6 font-semibold">Registrate</h1>
             <form action="/register" method="POST">
@@ -33,7 +25,7 @@
                         Paciente
                     </label>
 
-                    <template x-if='userable === "dogtor"'>
+                    <template x-if='userable === "doctor"'>
                         <div>
                             <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
                             <x-input type="text" name="medical_code" placeholder="Código médico" />
@@ -86,6 +78,8 @@
                 <x-primary-button>Registrarse</x-primary-button>
             </form>
 
+        </div>
+        <div style="background-image: url({{asset('img/Img2.png')}})" class="bg-cover" >
         </div>
     </div>
 </x-layout>
