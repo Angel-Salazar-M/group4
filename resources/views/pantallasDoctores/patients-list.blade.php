@@ -106,28 +106,47 @@
     </div>
 
     </div> --}}
+    <div class="px-4 md:p-12">
 
-
-    <div class="w-full flex justify-end">
-        <button class="border-2 bg-[#B394BD] rounded-full mt-20 mr-6 py-2 px-10 " @click="modal = !modal"
-            :aria-expanded="modal ? 'true' : 'false'">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
-                <path
-                    d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm80-80h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0-80Zm0 400Z"/>
-            </svg>
-        </button>
+        <div class="mx-auto max-w-3xl lg:text-center mt-10 mb-16">
+            <p class="font-bold sm:text-5xl text-scriptverde">Historiales <span class=""> Médicos
+                </span></p>
+        </div>
+        <div class="mx-auto">
+            <div class="relative mx-auto">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400"><svg
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#9ca3af">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg></div><input
+                    class="py-3 w-full md:w-[32rem] border-2 border-gray-300 rounded-3xl shadow-xl pl-10 focus:outline-none"
+                    name="search" placeholder="Buscar" type="text">
+            </div>
+            </div>
+        </div>
+        <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+            <x-cuadroperfil />
+        </div>
     </div>
-    <div x-data="{ modal: false }">
-
-        <template x-if="modal === false">
-            <h1>Hola</h1>
-        </template>
-
-        <template x-if="!(modal === false)">
-            <h1>si sirve?</h1>
-        </template>
-
-    </div>
-
 </x-layout>

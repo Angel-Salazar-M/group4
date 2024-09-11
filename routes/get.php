@@ -100,6 +100,10 @@ Route::get('/doctor/prescriptions', function () {
     return view('pantallasDoctores.Citasmedicaslistadoc');
 });
 
-Route::get('/doctor/prescriptions/new', function () {
+Route::get('/doctor/appointment/new', function () {
     return view('pantallasDoctores.Nuevacitamedicadoc');
+});
+
+Route::get('/doctor/prescription/new', function () {
+    return view('pantallasDoctores.nueva-prescripcion');
 });
