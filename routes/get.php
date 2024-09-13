@@ -23,7 +23,7 @@ Route::get('profile/edit', function () {
 
 Route::get('/prueba', function (Patient $patient) {
     return view('prueba', [
-    'patient' => $patient->with('user')->first()
+        'patient' => $patient->with('user')->first()
     ]);
 });
 
@@ -33,7 +33,7 @@ Route::get('/prueba', function (Patient $patient) {
 
 /**
  * P A T I E N T  R O U T E S
-*/
+ */
 
 Route::get('/patient/home', function () {
     return view('Homepages.homep', [
@@ -47,7 +47,7 @@ Route::get('/patient/record', function (Patient $patient) {
     ]);
 });
 
-Route::get('/patient/prescriptions', function ( Patient $patient ) {
+Route::get('/patient/prescriptions', function (Patient $patient) {
     return view('pantallasPacientes.Citasmedicaslistapac', [
         'patients' => $patient->with('user')->first(),
     ]);
@@ -67,11 +67,13 @@ Route::get('/patient/profile/user', function () {
 
 /**
  *  D O C T O R  R O U T E S
-*/
+ */
 // pendiente
 Route::get('/doctor/info', function () {
-    return view('Homepages.homedoctores', [
-        'user' => MedicalAppointment::all()
+    return view(
+        'Homepages.homedoctores',
+        [
+            'user' => MedicalAppointment::all()
         ]
     );
 });
@@ -110,4 +112,8 @@ Route::get('/doctor/appointment/new', function () {
 
 Route::get('/doctor/prescription/new', function () {
     return view('pantallasDoctores.nueva-prescripcion');
+});
+
+Route::get('/doctor/welcome', function () {
+    return view('pantallasDoctores.welcomedoc');
 });

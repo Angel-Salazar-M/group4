@@ -2,10 +2,12 @@
     <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-register">
 
         <div class="grid content-center justify-items-center">
+            <div class="bg-white rounded-lg w-96 shadow-xl grid justify-center">
             <h1 class="text-4xl text-black text-center font-sans mb-6 font-semibold">Registrate</h1>
-            <form action="/register" method="POST">
-                @csrf
-                <x-input type="text" name="name" placeholder="Nombre completo" /> {{-- buscar forma de que salgan las dos palabras --}}
+
+                <form action="/register" method="POST">
+                    @csrf
+                    <x-input type="text" name="name" placeholder="Nombre completo" /> {{-- buscar forma de que salgan las dos palabras --}}
                 <x-input type="text" name="dui" placeholder="Dui" />
                 <x-input type="date" name="birthday" placeholder="Fecha de cumpleaños" />
                 <x-input type="text" name="email" placeholder="Correo electrónico"></x-input>
@@ -13,7 +15,7 @@
                 <x-input type="password" name="password" placeholder="Contraseña" />
 
                 <p class="font-semibold">Elige tu tipo de cuenta</p>
-                <div x-data="{ userable: '' }">
+                <div x-data="{ userable: '' }" class="mb-3">
                     <label>
                         <input type="radio" id="doctor" @change="console.log(userable)" name="userable"
                             value="dogtor" x-model="userable">
@@ -24,8 +26,8 @@
                         <input type="radio" id="paciente" name="userable" value="patient" x-model="userable" checked>
                         Paciente
                     </label>
-
                     <template x-if='userable === "doctor"'>
+
                         <div>
                             <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
                             <x-input type="text" name="medical_code" placeholder="Código médico" />
@@ -74,12 +76,15 @@
                         </div>
                     </template>
                 </div>
+                <a href="/login" class="font-sans text-gray-600 hover:text-black">¿Ya tienes una cuenta? Inicia sesión</a>
 
                 <x-primary-button>Registrarse</x-primary-button>
             </form>
 
         </div>
+        </div>
         <div style="background-image: url({{asset('img/Img2.png')}})" class="bg-cover" >
         </div>
     </div>
 </x-layout>
+

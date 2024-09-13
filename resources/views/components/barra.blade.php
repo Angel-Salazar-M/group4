@@ -1,9 +1,9 @@
 <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 bg-scriptmorado sticky top-0 z-40 shadow-md">
     <div class="flex justify-between h-16">
-        <div class="flex"><a href="/welcome"><img src="{{ asset('img/logo.png') }}" class="h-12 mt-1"></a>
+        <div class="flex"><a href="/doctor/info"><img src="{{ asset('img/logowhite.png') }}" class="h-12 mt-1"></a>
             <div class="hidden space-x-2 sm:-my-px sm:ms-10 sm:flex"><!----><!----><!----><!----><!----><a
                     class="inline-flex items-center pt-1 border-b-2 border-transparent text-sm font-normal leading-5 hover:border-gray-700 focus:outline-none focus:text-black transition duration-150 ease-in-out"
-                    href="/welcome">
+                    href="/doctor/info">
                     <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#e8eaed" class="mb-2">
                             <path
@@ -26,7 +26,7 @@
                     </div>
                 </a><a
                     class="inline-flex items-center px-2 pt-1 border-b-2 border-transparent text-sm font-normal leading-5 hover:border-gray-700 focus:outline-none focus:text-black transition duration-150 ease-in-out"
-                    href="/register">
+                    href="/doctor/prescriptions">
                     <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                             <path
@@ -36,7 +36,7 @@
                     </div>
                 </a><a
                     class="inline-flex items-center pt-1 border-b-2 border-transparent text-sm font-normal leading-5 hover:border-gray-700 focus:outline-none focus:text-black transition duration-150 ease-in-out"
-                    href="/login">
+                    href="/doctor/profile">
                     <div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
                             <path

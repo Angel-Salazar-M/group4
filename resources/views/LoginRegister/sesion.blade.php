@@ -5,18 +5,21 @@
         </div>
 
         <div class="grid content-center justify-items-center">
-            <h1 class="text-4xl text-black text-center font-sans mb-6">Iniciar sesión</h1>
+            <div class="bg-white w-96 rounded-lg shadow-xl grid justify-center h-96">
 
-            <form action="/login" method="POST">
-                @csrf
+                <h1 class="text-4xl text-black text-center font-sans mt-4">Iniciar sesión</h1>
 
-                <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
-                <x-input type="password" name="password" placeholder="contraseña" />
-                <a href="prueba" class="mt-4 font-sans hover:font-semibold">¿Has olvidado tu contraseña?</a> {{-- convertir esto a un botón, pasar hover a focus --}}
-                <x-primary-button> Iniciar sesión</x-primary-button>
+                <form action="/login" method="POST">
+                    @csrf
 
-            </form>
+                    <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
+                    <x-input type="password" name="password" placeholder="contraseña" />
+                    <a href="/register" class="font-sans text-gray-600 hover:text-black">¿Aún no tienes una cuenta? Registrate</a>
+                    <x-primary-button> Iniciar sesión</x-primary-button>
 
+                </form>
+
+            </div>
         </div>
     </div>
 </x-layout>

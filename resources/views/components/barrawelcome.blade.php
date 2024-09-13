@@ -1,7 +1,7 @@
 <div class="w-full mx-auto px-4 sm:px-6 lg:px-8 bg-scriptazul sticky top-0 z-40 shadow-md">
     <div class="flex justify-between h-16">
-        <div class="flex"><a href="/welcome"><img src="{{ asset('img/logo.png') }}" class="h-12 mt-1"></a>
-
+        <div class="flex relative">
+            <a href="/welcome"><img src="{{ asset('img/logowhite.png') }}" class="mt-2 h-14 "></a>
         </div>
         <div class="hidden sm:flex sm:items-center sm:ms-6">
             <div class="flex justify-between space-x-10 h-16"><a
