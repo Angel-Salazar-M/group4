@@ -36,7 +36,9 @@ Route::get('/prueba', function (Patient $patient) {
 */
 
 Route::get('/patient/home', function () {
-    return view('Homepages.homep');
+    return view('Homepages.homep', [
+        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
+    ]);
 });
 
 Route::get('/patient/record', function (Patient $patient) {

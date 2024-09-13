@@ -20,8 +20,8 @@
         href="https://2toring.superatepoma.org/chat"> Chat </a><!----></div>
 <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
     <div class="px-4">
-        <div class="font-medium text-base text-gray-800 dark:text-gray-200">Iris Salguero</div>
-        <div class="font-medium text-sm text-gray-500">student@example.com</div>
+        <div class="font-medium text-base text-gray-800 dark:text-gray-200">Ángel Salazar</div>
+        <div class="font-medium text-sm text-gray-500">patient@example.com</div>
     </div>
     <div class="mt-3 space-y-1"><a
             class="block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 focus:outline-none focus:text-gray-800 dark:focus:text-gray-200 focus:bg-gray-50 dark:focus:bg-gray-700 focus:border-gray-300 dark:focus:border-gray-600 transition duration-150 ease-in-out"
@@ -42,18 +42,18 @@ class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 opacity-75 
 
 <div class="flex mb-2 space-x-2 transition-all ease-in-out"><span
         class="material-symbols-outlined text-2toring-blue">person</span>
-    <p class="text-[16px] text-black">Mentor:</p>
-    <p class="text-gray-600 ms-7">Christopher Bautista</p>
+    <p class="text-[16px] text-black">Doctor:</p>
+    <p class="text-gray-600 ms-7">Josué Morales</p>
 </div>
 <div class="flex mb-2 transition-all ease-in-out space-x-2"><span
         class="material-symbols-outlined text-2toring-blue">book</span>
-    <p class="text-[16px] text-black">Subject:</p>
-    <p class="text-gray-600">Fractions Tutoring</p>
+    <p class="text-[16px] text-black">Speciality:</p>
+    <p class="text-gray-600">Neurosurgeon</p>
 </div>
 <div class="flex mb-2 space-x-2 transition-all ease-in-out"><span
         class="material-symbols-outlined text-2toring-blue">category</span>
     <p class="text-[16px] text-black">Category:</p>
-    <p class="text-[16px] ms-5 text-gray-600">Mathematics</p>
+    <p class="text-[16px] ms-5 text-gray-600">rotcoD</p>
 </div>
 <div class="flex mb-2 space-x-2 transition-all ease-in-out"><span
         class="material-symbols-outlined text-2toring-blue">description</span>

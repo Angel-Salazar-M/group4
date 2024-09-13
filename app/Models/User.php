@@ -45,7 +45,7 @@ class User extends Authenticatable
     {
         return Carbon::parse($this->attributes['birthday'])->age;
     }
-    
+
     protected function casts(): array
     {
         return [
@@ -58,4 +58,5 @@ class User extends Authenticatable
     {
         return $this->morphTo();
     }
+
 }
