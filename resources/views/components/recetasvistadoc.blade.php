@@ -12,11 +12,22 @@
     <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
     <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
     <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>
-    <h1 class="flex flex-row justify-evenly col-span-2 mt-8 ml-3">Diagnóstico: <h1
-            class="text-justify col-span-2 underline underline-offset-1 mb-5">el paciente enfrenta distintas condiciones
-            como cancer, tos, pulmones secos, fiebre, ashdajsdhasdjsda askdgashgdasgjdsa ashdgjasgdhasgdsa
-            ahsdgasgdhasgdjsa has sdjjsgdjs sjgdjsgd jsdgjs dgagshdj asjvahsdajsjsavd</h1>
-    </h1>
+    <h1 class="font-bold font-sans overflow-hidden">Diagnóstico: <br>
+        <H1 class="col-start-1 font-semibold">Hipertensión arterial esencial (primaria)</H1>
+<div class="flex col-start-1">
+
+    <h1 class="font-bold col-start-1">Descripción:</h1>
+    <h1 class="col-start-1 px-2">Presión arterial elevada sin una causa secundaria identificada.
+        Códigos: I10 (CIE-10)</h1>
+    </div>
+           <h1 class="font-semibold col-start-1">Dislipidemia</h1>
+           <div class="col-start-1 flex">
+
+               <h1 class="font-bold col-start-1">Descripción:</h1> <h1 class="col-start-1 px-2">Alteración de los niveles de lípidos en sangre, con elevación de colesterol LDL y
+                   triglicéridos.
+                   Códigos: E78.5 (CIE-10)</h1>
+                </div>
+        </h1>
     <h1 class="flex justify-center flex-row mt-4 col-span-2">Medicación: <h1
             class="text-justify col-span-2 underline underline-offset-1 mb-5">Ibuprofeno, acetaminofen, agua y sol
             jhdshsgd shgjhgds jhsgdhgsj jhgsdjgsdhgsjdgsd shgdsj jhgsdjs sdsd shgd</h1>

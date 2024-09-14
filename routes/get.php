@@ -48,7 +48,7 @@ Route::get('/patient/record', function (Patient $patient) {
 });
 
 Route::get('/patient/prescriptions', function (Patient $patient) {
-    return view('pantallasPacientes.Citasmedicaslistapac', [
+    return view('pantallasPacientes.prescripcioneslistapac', [
         'patients' => $patient->with('user')->first(),
     ]);
 });
