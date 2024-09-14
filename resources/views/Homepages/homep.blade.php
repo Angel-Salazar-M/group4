@@ -1,7 +1,11 @@
 <x-layout title="Paco">
     <x-barra />
-    <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
-        <div class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100">
+    <div class="mx-auto max-w-3xl lg:text-center mt-20 mb-16">
+        <p class="font-bold sm:text-5xl text-scriptverde">Prescripciones <span class=""> recientes
+            </span></p>
+    </div>
+    <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ">
+        <div class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100 shadow-xl">
         <div class="flex justify-center hover:scale-105 transition-all ease-in-out"></div>
         <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                 viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -48,9 +52,7 @@
         </div>
         <div class="flex items-center justify-center gap-x-4 mt-4"><a active="false" href="/doctor/record/1"><button
                     class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
-                    Historial médico</button></a><a href="/doctor/prescription/new"><button type="button"
-                    class="inline-flex items-center bg-white text-xs uppercase tracking-widest shadow-sm focus:outline-none font-comfortaa focus:ring-2 focus:ring-scriptazul focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150 border-2 border-scriptazul hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptazul py-2 px-4 rounded-3xl">
-                    Nueva Prescripción </button></a></div>
+                    Historial médico</button></a><a href="/patient/record"></a></div>
     </div>
     </div>
 </x-layout>

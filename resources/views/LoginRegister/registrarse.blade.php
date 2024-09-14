@@ -78,7 +78,11 @@
                 </div>
                 <a href="/login" class="font-sans text-gray-600 hover:text-black">¿Ya tienes una cuenta? Inicia sesión</a>
 
-                <x-primary-button>Registrarse</x-primary-button>
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class=" border-2 font-sans border-white bg bg-[#B394BD]  w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600">Registrarse</button>
+                </div>
+
             </form>
 
         </div>

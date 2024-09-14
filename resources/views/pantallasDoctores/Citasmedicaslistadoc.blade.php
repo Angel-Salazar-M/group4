@@ -6,6 +6,5 @@
     </div>
     <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
         <x-cuadroperfil/>
-        <x-cuadroreceta/>
     </div>
 </x-layout>
