@@ -1,7 +1,6 @@
 <x-layout title="expediente">
     <x-barra />
-
-    <div class="grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
+<div class="grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
 
         <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto">
             <img src="{{ asset('img/ejemplop1.jpg') }}"
@@ -77,7 +76,7 @@
     <div class=>
     <h1 class=" text-2xl font-bold text-center col-span-2 mt-5 mb-5" id="citasMedicas">PRESCRIPCIONES MÉDICAS RECIENTES</h1>
 
-    <input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto mb-6">
+    <input type="text" name="barra de búsqueda" placeholder=" Buscar..." class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-1 flex mx-auto">
 <x-recetasvistadoc/>
 <x-recetasvistadoc/>
 <x-recetasvistadoc/>
