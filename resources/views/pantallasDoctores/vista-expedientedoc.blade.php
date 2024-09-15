@@ -73,10 +73,10 @@
     </div>
     <div id="citasMedicas"></div>
     <div>
-        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10 mt-20">
+        <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10 mt-16">
     </div>
     <div class=>
-        <h1 class=" text-2xl font-bold text-center col-span-2 mt-5 mb-16">PRESCRIPCIONES MÉDICAS
+        <h1 class=" text-2xl font-bold text-center col-span-2 mt-14 mb-14q">PRESCRIPCIONES MÉDICAS
             RECIENTES</h1>
 
         <div
@@ -142,7 +142,7 @@
             </div>
         </div>
         <div
-            class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto mb-5 p-6 bg-white shadow-xl">
+            class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto p-6 bg-white shadow-xl mb-14">
             <div class="flex ml-5 mt-5">
                 <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
                     class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
@@ -204,7 +204,7 @@
             </div>
         </div>
         <div
-            class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto mb-5 p-6 bg-white shadow-xl">
+            class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto p-6 bg-white shadow-xl mb-14">
             <div class="flex ml-5 mt-5">
                 <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
                     class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
@@ -366,9 +366,7 @@
                 </div>
             </div>
             <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mt-10 mb-10">
-            <h1 class=" text-2xl font-bold text-center col-span-2 mt-10">CITAS MÉDICAS RECIENTES</h1>
-            <input type="text" name="barra de búsqueda" placeholder=" Buscar..."
-                class="border-2 rounded-lg w-96 border-[#B394BD] h-11 mt-10 mb-10 flex mx-auto">
+            <h1 class=" text-2xl font-bold text-center col-span-2 mt-10 mb-10">CITAS MÉDICAS RECIENTES</h1>
 
             <x-citavista nombre="Ola" id="1213213"
                 doctor="Jose valladares Guzman Garcia Salazarasjfdkjsfagshj" />

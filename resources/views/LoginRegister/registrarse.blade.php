@@ -2,8 +2,8 @@
     <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-register">
 
         <div class="grid content-center justify-items-center">
-            <div class="bg-white rounded-lg w-96 shadow-xl grid justify-center">
-            <h1 class="text-4xl text-black text-center font-sans mb-6 font-semibold">Registrate</h1>
+            <div class="bg-white rounded-lg w-96 shadow-xl grid justify-center py-4 mt-4 mb-4">
+            <h1 class="text-4xl text-black text-center font-sans mb-4 font-semibold">Registrate</h1>
 
                 <form action="/register" method="POST">
                     @csrf
@@ -87,9 +87,16 @@
 
         </div>
         </div>
+<<<<<<< Updated upstream
         <div style="background-image: url({{asset('img/Img2.png')}})" class="h-screen bg-cover my-auto">
             
         </div>
+=======
+         <div class="inset-0">
+            <div class="h-full w-full bg-cover bg-center bg-no-repeat "
+                style="background-image: url('{{ asset('img/fondoregister.png') }}');">
+            </div>
+>>>>>>> Stashed changes
     </div>
 </x-layout>
 
