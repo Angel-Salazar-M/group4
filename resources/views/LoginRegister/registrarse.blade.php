@@ -87,16 +87,10 @@
 
         </div>
         </div>
-<<<<<<< Updated upstream
-        <div style="background-image: url({{asset('img/Img2.png')}})" class="h-screen bg-cover my-auto">
-            
-        </div>
-=======
          <div class="inset-0">
             <div class="h-full w-full bg-cover bg-center bg-no-repeat "
                 style="background-image: url('{{ asset('img/fondoregister.png') }}');">
             </div>
->>>>>>> Stashed changes
     </div>
 </x-layout>
 

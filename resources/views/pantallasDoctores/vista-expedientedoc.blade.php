@@ -76,13 +76,13 @@
         <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-3/6 mb-10 mt-16">
     </div>
     <div class=>
-        <h1 class=" text-2xl font-bold text-center col-span-2 mt-14 mb-14q">PRESCRIPCIONES MÉDICAS
+        <h1 class=" text-2xl font-bold text-center col-span-2 mt-14 mb-14">PRESCRIPCIONES MÉDICAS
             RECIENTES</h1>
 
         <div
             class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto mb-14 p-6 bg-white shadow-xl">
             <div class="flex ml-5 mt-5">
-                <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
+                <img src="{{ asset('img/usericon.png') }}"
                     class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
                 <div class="flex flex-col">
                     <h1 class="font-bold">Dr.Gustavo Salazar</h1>
@@ -144,7 +144,7 @@
         <div
             class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto p-6 bg-white shadow-xl mb-14">
             <div class="flex ml-5 mt-5">
-                <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
+                <img src="{{ asset('img/usericon.png') }}"
                     class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
                 <div class="flex flex-col">
                     <h1 class="font-bold">Dr.Gustavo Salazar</h1>
@@ -206,7 +206,7 @@
         <div
             class="grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-lg w-5/6 mx-auto p-6 bg-white shadow-xl mb-14">
             <div class="flex ml-5 mt-5">
-                <img src=https://cdn-icons-png.flaticon.com/512/1144/1144760.png
+                <img src="{{ asset('img/usericon.png') }}"
                     class="w-12 h-12 rounded-full object-cover mt-2 mr-8 ml-5 row-span-2 col-span-2">
                 <div class="flex flex-col">
                     <h1 class="font-bold">Dr.Gustavo Salazar</h1>

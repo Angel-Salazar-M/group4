@@ -61,9 +61,13 @@ Route::get('/patient/profile/user', function () {
     return view('pantallasPacientes.perfilvistapac');
 });
 
+Route::get('/patient/welcome', function () {
+    return view('pantallasPacientes.welcomepac');
+});
 
-
-
+Route::get('/patient/profile/user/edit', function () {
+    return view('pantallasPacientes.perfileditarpac');
+});
 
 /**
  *  D O C T O R  R O U T E S
@@ -90,16 +94,13 @@ Route::get('/doctor/records', function () {
     ]);
 }); //pendiente modal
 
-Route::get('/doctor/history', function () {
-    return view('pantallasDoctores.Datosdehistorialdoc');
-});//pendiente tal vez borrar
 
 Route::get('/doctor/profile', function () {
     return view('pantallasDoctores.perfilvistadoc');
 });
 
 Route::get('/doctor/history/new', function () {
-    return view('pantallasDoctores.nuevoHistorial');
+    return view('pantallasDoctores.nuevaprescripcion');
 });
 
 Route::get('/doctor/prescriptions', function () {
@@ -117,3 +118,9 @@ Route::get('/doctor/prescription/new', function () {
 Route::get('/doctor/welcome', function () {
     return view('pantallasDoctores.welcomedoc');
 });
+
+Route::get('/doctor/profile/edit', function () {
+    return view('pantallasDoctores.perfileditardoc');
+});
+
+

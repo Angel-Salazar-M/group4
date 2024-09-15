@@ -59,9 +59,9 @@
             <h1>Dirección de clínica: 12 ave. Norte San Antonio las palmeras, Santa tecla, La Libertad</h1>
         </div>
         <div class="flex justify-center col-span-2">
-            <a href="#citasMedicas"
+            <a href="/doctor/profile/edit"
                 class="border-2  font-semibold border-white bg bg-[#B394BD] text-center  w-40 h-12 py-2 rounded-full text-white focus:border-gray-600">
-                editar perfil</a>
+                Editar perfil</a>
         </div>
     </div>
 </div>
