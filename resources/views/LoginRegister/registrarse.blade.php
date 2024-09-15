@@ -87,7 +87,8 @@
 
         </div>
         </div>
-        <div style="background-image: url({{asset('img/Img2.png')}})" class="bg-cover" >
+        <div style="background-image: url({{asset('img/Img2.png')}})" class="h-screen bg-cover my-auto">
+            
         </div>
     </div>
 </x-layout>
