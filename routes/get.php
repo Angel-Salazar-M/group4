@@ -103,8 +103,10 @@ Route::get('/doctor/history/new', function () {
     return view('pantallasDoctores.nuevaprescripcion');
 });
 
-Route::get('/doctor/prescriptions', function () {
-    return view('pantallasDoctores.Citasmedicaslistadoc');
+Route::get('/doctor/prescriptions', function (Patient $patient) {
+    return view('pantallasDoctores.Citasmedicaslistadoc', [
+        'patient' => $patient->with('user')->first()
+    ]);
 });
 
 Route::get('/doctor/appointment/new', function () {

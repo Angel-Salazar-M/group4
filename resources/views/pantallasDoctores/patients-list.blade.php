@@ -129,7 +129,7 @@
         <div
             class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100">
             <div class="flex justify-center hover:scale-105 transition-all ease-in-out"><img
-                    src="{{ asset('img/ejemplop1.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
+                    src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2020/03/MG_3442_2.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -137,7 +137,7 @@
                         d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
                 </svg>
                 <p class="text-[16px] text-black">paciente:</p>
-                <p class="text-gray-600 ms-7">Miguel Rodríguez</p>
+                <p class="text-gray-600 ms-7">Claudia Rodríguez</p>
             </div>
             <div class="flex mb-2 transition-all ease-in-out space-x-2"> <svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -145,7 +145,7 @@
                         d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
                 </svg>
                 <p class="text-[16px] text-black">Nacimiento: </p>
-                <p class="text-gray-600">29/07/02</p>
+                <p class="text-gray-600">07/09/1990</p>
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -188,7 +188,7 @@
                         d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
                 </svg>
                 <p class="text-[16px] text-black">Nacimiento: </p>
-                <p class="text-gray-600">01/05/95</p>
+                <p class="text-gray-600">01/05/1999</p>
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -215,7 +215,7 @@
         <div
             class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100">
             <div class="flex justify-center hover:scale-105 transition-all ease-in-out"><img
-                    src="{{ asset('img/ejemplop1.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
+                    src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2020/03/MG_6970_2.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -231,7 +231,7 @@
                         d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
                 </svg>
                 <p class="text-[16px] text-black">Nacimiento: </p>
-                <p class="text-gray-600">09/05/70</p>
+                <p class="text-gray-600">09/05/1980</p>
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -259,7 +259,7 @@
         <div
             class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100">
             <div class="flex justify-center hover:scale-105 transition-all ease-in-out"><img
-                    src="{{ asset('img/ejemplop1.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
+                    src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2020/03/MG_7051_3.jpg') }}" class="size-40 rounded-full mb-4 object-cover shadow-xl">
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -275,7 +275,7 @@
                         d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
                 </svg>
                 <p class="text-[16px] text-black">Nacimiento: </p>
-                <p class="text-gray-600">19/02/06</p>
+                <p class="text-gray-600">19/02/1998</p>
             </div>
             <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                     height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
