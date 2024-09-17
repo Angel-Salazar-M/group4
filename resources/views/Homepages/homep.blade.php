@@ -7,7 +7,7 @@
     <div class="mx-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-10">
 
         <div
-            class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
+            class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptverde opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
             <div class="mx-auto">
                 <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                         height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -53,14 +53,14 @@
                     <p class="text-gray-600 ms-1">{{ $patient->blood_type }}</p>
                 </div>
                 <div class="flex items-center justify-center gap-x-4 mt-8"><a active="false"
-                        href="/doctor/record/1"><button
+                        href="/patient/record"><button
                             class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
                             Historial médico</button></a><a href="/patient/record"></a></div>
             </div>
         </div>
 
             <div
-                class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
+                class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptverde opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
                 <div class="mx-auto">
                     <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -106,7 +106,7 @@
                         <p class="text-gray-600 ms-1">{{$patient->blood_type }}</p>
                     </div>
                     <div class="flex items-center justify-center gap-x-4 mt-8"><a active="false"
-                            href="/doctor/record/1"><button
+                            href="/patient/record"><button
                                 class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
                                 Historial médico</button></a><a href="/patient/record"></a></div>
                 </div>
@@ -114,7 +114,7 @@
 
 
                 <div
-                    class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
+                    class="card bg-white p-4 rounded-3xl border-solid border-2 border-scriptverde opacity-90 duration-300 hover:opacity-100 shadow-xl flex flex-col justify-center w-96 ">
                     <div class="mx-auto">
                         <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"
                                 height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
@@ -160,7 +160,7 @@
                             <p class="text-gray-600 ms-1">{{$patient->blood_type }}</p>
                         </div>
                         <div class="flex items-center justify-center gap-x-4 mt-8"><a active="false"
-                                href="/doctor/record/1"><button
+                                href="/patient/record"><button
                                     class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
                                     Historial médico</button></a><a href="/patient/record"></a></div>
                     </div>

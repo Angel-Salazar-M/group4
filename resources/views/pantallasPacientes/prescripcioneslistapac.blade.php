@@ -98,7 +98,7 @@
                 <p class="text-[16px] text-black">Dirección:</p>
                 <p class="text-gray-600 ms-1"> 658 Sporer Ramp Kayleightown, DE 54317-4503 </p>
             </div>
-            <div class="flex items-center justify-center gap-x-4 mt-4"><a active="false" href="/doctor/record/1"><button
+            <div class="flex items-center justify-center gap-x-4 mt-4"><a active="false" href="/patient/record"><button
                 class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
                 Historial médico</button></a><a href="/patient/record"></a></div>
         </div>
