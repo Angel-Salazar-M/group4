@@ -3,9 +3,9 @@
 <div class="py-8 px-8 grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
 
     <div class="py-8 px-8 flex flex-col justify-center items-center border-4 rounded-lg border-scriptverde h-96 w-80 mx-auto shadow-xl bg-gray-100">
-        <img src="{{ asset('img/ejemplop1.jpg') }}"
+        <img src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2023/05/MG_8074-copia-768x614.jpg') }}"
             class="w-36 h-36 rounded-full object-cover">
-        <h1 class="mt-6  font-bold text-xl">Dr. Guzmán</h1>
+        <h1 class="mt-6  font-bold text-xl"> {{ $patient->name }} </h1>
         <h1 class="text-xl  font-bold">Perfil</h1>
     </div>
 
@@ -16,7 +16,7 @@
                 <path
                     d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
             </svg>
-            <h1 class=" text-2xl">Nombre: Alejandro Daniel Guzmán Campos</h1>
+            <h1 class=" text-2xl">Nombre:  {{ $patient->name }}  </h1>
         </div>
         <div class="flex space-x-5 justify-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"

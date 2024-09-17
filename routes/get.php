@@ -43,13 +43,13 @@ Route::get('/patient/home', function () {
 
 Route::get('/patient/record', function (Patient $patient) {
     return view('pantallasPacientes.vista-expedientepac', [
-        'patient' => $patient->with('user')->first()
+        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
     ]);
 });
 
 Route::get('/patient/prescriptions', function (Patient $patient) {
     return view('pantallasPacientes.prescripcioneslistapac', [
-        'patients' => $patient->with('user')->first(),
+        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
     ]);
 });
 
@@ -57,8 +57,10 @@ Route::get('/patient/prescription', function () {
     return view('pantallasPacientes.recetapac');
 });
 
-Route::get('/patient/profile/user', function () {
-    return view('pantallasPacientes.perfilvistapac');
+Route::get('/patient/profile/user', function (Patient $patient) {
+    return view('pantallasPacientes.perfilvistapac', [
+        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
+    ]);
 });
 
 Route::get('/patient/welcome', function () {
