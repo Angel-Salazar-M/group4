@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('civil_status');
             $table->string('blood_type');
+            $table->string('code')->default(Str::random(4));
         });
     }
 

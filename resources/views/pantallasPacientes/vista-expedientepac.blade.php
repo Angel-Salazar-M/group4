@@ -92,8 +92,8 @@
             </div>
             <h1 class="grid-col-start-2 text-right mr-10 mt-10 font-bold">Número único profesional: 0123 456 7899</h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
-            <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
-            <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>
+            <h1 class="text-center h-6">Paciente: {{ $patient->name }} </h1>
+            <h1 class="text-center">Fecha de nacimiento: {{ $patient->birthday }} </h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
 
             <h1 class="font-bold overflow-hidden col-span-2 text-center mb-4">Diagnóstico: <br>
@@ -154,8 +154,8 @@
             </div>
             <h1 class="grid-col-start-2 text-right mr-10 mt-10 font-bold">Número único profesional: 0123 456 7899</h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
-            <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
-            <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>
+            <h1 class="text-center h-6">Paciente: {{ $patient->name }} </h1>
+            <h1 class="text-center">Fecha de nacimiento: {{ $patient->birthday }} </h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
 
             <h1 class="font-bold overflow-hidden col-span-2 text-center mb-4">Diagnóstico: <br>
@@ -216,8 +216,8 @@
             </div>
             <h1 class="grid-col-start-2 text-right mr-10 mt-10 font-bold">Número único profesional: 0123 456 7899</h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
-            <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
-            <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>
+            <h1 class="text-center h-6">Paciente: {{ $patient->name }} </h1>
+            <h1 class="text-center">Fecha de nacimiento: {{ $patient->birthday }} </h1>
             <hr class="bg-scriptverde h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
 
             <h1 class="font-bold overflow-hidden col-span-2 text-center mb-4">Diagnóstico: <br>

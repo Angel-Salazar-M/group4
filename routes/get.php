@@ -79,14 +79,14 @@ Route::get('/doctor/info', function () {
     return view(
         'Homepages.homedoctores',
         [
-            'user' => MedicalAppointment::all()
+            'user' => MedicalAppointment::all(), 
         ]
     );
 });
 
 Route::get('/doctor/record/{patient}', function (Patient $patient) {
     return view('pantallasDoctores.vista-expedientedoc', [
-        'patient' => $patient
+        'patient' => $patient->load('user')
     ]);
 }); //hechooooo
 

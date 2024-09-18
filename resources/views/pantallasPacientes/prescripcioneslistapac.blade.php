@@ -96,9 +96,12 @@
                         d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
                 </svg>
                 <p class="text-[16px] text-black">Dirección:</p>
-                <p class="text-gray-600 ms-1"> 658 Sporer Ramp Kayleightown, DE 54317-4503 </p>
+                <p class="text-gray-600 ms-1"> {{ $patient->address }} </p>
+
+                {{-- Creo que es la dirección del dorctor --}}
+
             </div>
-            <div class="flex items-center justify-center gap-x-4 mt-4"><a active="false" href="/patient/record"><button
+            <div class="flex items-center justify-center gap-x-4 mt-4"><a active="false" href="/patient /record"><button
                 class="transition duration-150 ease-in-out border-2 border-scriptverde hover:-translate-y-0.5 hover:scale-110 hover:bg-scriptverde tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
                 Historial médico</button></a><a href="/patient/record"></a></div>
         </div>

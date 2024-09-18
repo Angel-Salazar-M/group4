@@ -26,7 +26,7 @@
                         <input type="radio" id="paciente" name="userable" value="patient" x-model="userable" checked>
                         Paciente
                     </label>
-                    <template x-if='userable === "doctor"'>
+                    <template x-if='userable === "dogtor"'>
 
                         <div>
                             <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
@@ -87,8 +87,8 @@
 
         </div>
         </div>
-         <div class="inset-0">
-            <div class="h-full w-full bg-cover bg-center bg-no-repeat "
+         <div class="inset-0 flex items-center">
+            <div class="h-screen w-full bg-cover bg-center bg-no-repeat "
                 style="background-image: url('{{ asset('img/fondoregister.png') }}');">
             </div>
     </div>

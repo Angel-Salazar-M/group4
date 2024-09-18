@@ -4,8 +4,10 @@
     <div
         class="grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
 
-        <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto">
-            <img src="{{ asset('img/ejemplop1.jpg') }}" class="w-36 h-36 rounded-full object-cover">
+
+
+    <div class="flex flex-col justify-center items-center border-4 rounded-lg border-[#B394BD] h-96 w-80 mx-auto">
+        <img src="{{ asset('img/ejemplop1.jpg') }}" class="w-36 h-36 rounded-full object-cover">
             <h1 class="mt-6  font-bold text-xl">{{ $patient->user->name }}</h1>
             <h1 class="text-xl  font-bold">expediente</h1>
         </div>
@@ -92,8 +94,8 @@
             </div>
             <h1 class="grid-col-start-2 text-right mr-10 mt-10 font-bold">Número único profesional: 0123 456 7899</h1>
             <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
-            <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>
-            <h1 class="text-center">Fecha de nacimiento: 14/07/2007</h1>
+            <h1 class="text-center h-6">Paciente: {{ $patient->user->name }} </h1>
+            <h1 class="text-center">Fecha de nacimiento: {{ $patient->user->birthday }} </h1>
             <hr class="bg-[#B394BD] h-1 rounded-full  mx-auto my-5 w-5/6 mt-10 mb-10 col-span-2 ">
 
             <h1 class="font-bold overflow-hidden col-span-2 text-center mb-4">Diagnóstico: <br>

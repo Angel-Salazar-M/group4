@@ -41,4 +41,6 @@ class Doctor extends Model
     {
         return $this->HasMany(MedicalAppointment::class);
     }
+
+    
 }
