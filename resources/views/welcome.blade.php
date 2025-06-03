@@ -1,5 +1,5 @@
 <x-layout title="Welcome page">
-    <x-barrawelcome />
+    <x-barrapac />
     <div
         class="mt-10 grid bg-white shadow-md rounded-lg max-w-screen-xl px-6 md:px-16 py-8 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">

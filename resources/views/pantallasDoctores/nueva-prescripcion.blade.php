@@ -1,5 +1,5 @@
 <x-layout title="Nueva prescripción">
-    <x-barra />
+    <x-barradoc />
     <div class="grid grid-cols-2 bg-white rounded-lg shadow-xl w-5/6 mx-auto mt-10 border-2 border-scriptmorado">
         <div class="my-auto px-6 py-6">
             <h1 class="text-center h-6">Paciente: Ángel Gustavo Salazar Mendoza</h1>

@@ -1,5 +1,5 @@
 <x-layout title="Cita">
-    <x-barra/>
+    <x-barradoc/>
     <div class="mt-10 grid grid-cols-2 grid-rows-2 border-4 border-[#B394BD] rounded-md w-5/6 mx-auto mb-5 ">
             <div>
             <div class="flex ml-5 mt-5">

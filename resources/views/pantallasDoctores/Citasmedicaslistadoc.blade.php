@@ -1,5 +1,5 @@
 <x-layout title="Prescripciones">
-    <x-barra />
+    <x-barradoc />
     <div class="mx-auto max-w-3xl lg:text-center mt-20 mb-16">
         <p class="font-bold sm:text-5xl text-scriptverde">Prescripciones <span class=""> recientes
             </span></p>
