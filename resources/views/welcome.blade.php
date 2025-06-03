@@ -5,7 +5,7 @@
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1
                 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-scriptverde">
-                Salud y tecnología en perfecta armonía
+                Manage your medical information in just one click
                 <p class="max-w-2xl mb-6 mt-6 font-light lg:mb-8 md:text-lg lg:text-lg text-black">SCRIPTGO es
                     una plataforma innovadora diseñada para facilitar la organización médica por medio de
                     características que permiten manejar datos relacionados a la salud como prescripciones médicas e
@@ -17,7 +17,7 @@
     </div>
     <div class=" mt-14">
         <div class="mx-auto max-w-3xl lg:text-center mt-20 mb-16">
-            <p class="font-bold sm:text-5xl text-scriptverde">Nuestras <span class=""> Características
+            <p class="font-bold sm:text-5xl text-scriptverde">What makes <span class=""> ScriptGo?
                 </span></p>
         </div>
         <div class="grid gap-12 lg:grid-cols-1 lg:gap-12">
@@ -32,7 +32,7 @@
                                             <path
                                                 d="M222-214 80-356l42-42 100 99 179-179 42 43-221 221Zm0-320L80-676l42-42 100 99 179-179 42 43-221 221Zm298 244v-60h360v60H520Zm0-320v-60h360v60H520Z" />
                                         </svg></div>
-                                </div> Fácil de usar
+                                </div> Easy to use
                             </dt>
                             <dd class="mt-1 text-sm leading-7 text-gray-600">Nuestra plataforma se enfoca en brindar un
                                 servicio accesible y cómodo de usar para todos los usuarios.</dd>
