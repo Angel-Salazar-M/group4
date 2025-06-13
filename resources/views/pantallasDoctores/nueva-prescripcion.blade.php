@@ -25,7 +25,22 @@
             <textarea name="diagnostico" cols="90" rows="2" class="border-2 border-scriptmorado rounded-xl px-2 py-2"></textarea>
         </h1>
         </h1>
-        <h1 class="col-span-2 flex justify-center mb-6">17/03/24</h1>
+       <script>
+    function mostrarFechaCorta() {
+      const hoy = new Date();
+      const dia = String(hoy.getDate()).padStart(2, '0');
+      const mes = String(hoy.getMonth() + 1).padStart(2, '0');
+      const año = String(hoy.getFullYear()).slice(-2);
+      const fechaFormateada = `${dia}/${mes}/${año}`;
+      document.getElementById("fecha").textContent = fechaFormateada;
+    }
+
+    window.onload = mostrarFechaCorta;
+  </script>
+</head>
+<body>
+  <h1 id="fecha" class="col-span-2 flex justify-center mb-6"></h1>
+</body>
     </div>
     <div class="grid justify-center mt-10"><button class="border-2 border-scriptmorado rounded-xl bg-scriptmorado w-44 h-11 text-white">Guardar</button></div>
     <x-barrafinal />
