@@ -3,7 +3,7 @@
 <div class="py-8 px-8 grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
 
     <div class="py-8 px-8 flex flex-col justify-center items-center border-4 rounded-lg border-scriptverde h-96 w-80 mx-auto shadow-xl bg-gray-100">
-        <img src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2023/05/MG_8074-copia-768x614.jpg') }}"
+        <img src="{{ asset('https://simg.nicepng.com/png/small/933-9332131_profile-picture-default-png.png') }}"
             class="w-36 h-36 rounded-full object-cover">
         <h1 class="mt-6  font-bold text-xl"> {{ $patient->name }} </h1>
         <h1 class="text-xl  font-bold">Perfil</h1>

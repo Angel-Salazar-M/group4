@@ -42,5 +42,9 @@ class Doctor extends Model
         return $this->HasMany(MedicalAppointment::class);
     }
 
-    
+    public function patients(): HasMany
+    {
+        return $this->through()->hasMany(Patient::class);
+    }
+
 }

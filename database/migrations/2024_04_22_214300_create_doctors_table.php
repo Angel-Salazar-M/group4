@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('medical_speciality');
             $table->integer('medical_code');
+            $table->string('place_address');
         });
     }
 

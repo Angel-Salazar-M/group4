@@ -14,10 +14,8 @@ return new class extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->id();
             $table->string('gender');
-            $table->integer('age');
             $table->string('address');
-            $table->string('civil_status');
-            $table->string('blood_type');
+            $table->boolean('caretaker');
             $table->string('code')->default(Str::random(4));
         });
     }

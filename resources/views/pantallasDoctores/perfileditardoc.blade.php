@@ -1,5 +1,5 @@
 <x-layout title="Perfil">
-    <x-barra />
+    <x-barradoc />
     <div
         class="py-8 px-8 grid grid-cols-[300px_1fr] h-[calc(90vh-100px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
 
