@@ -1,5 +1,5 @@
-<x-layout title="Home">
-    <x-barra />
+<x-layout title="Home doctores">
+    <x-barradoc />
     <div class="mx-auto max-w-3xl lg:text-center mt-8">
         <p class="font-bold sm:text-5xl text-scriptverde">Modificados <span class=""> Recientemente
             </span></p>

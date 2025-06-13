@@ -1,5 +1,5 @@
 <x-layout title="Patients list">
-    <x-barra />
+    <x-barradoc />
 
     {{-- Mover el boton de añadir hasta el fondo y ver porque expira la pagina cuando se hace "post" --}}
 
