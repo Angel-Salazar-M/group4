@@ -130,7 +130,7 @@
             <div
                 class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-scriptmorado opacity-90 duration-300 hover:opacity-100">
                 <div class="flex justify-center hover:scale-105 transition-all ease-in-out"><img
-                        src="{{ asset('https://karlacsphotography.com/wp-content/uploads/2020/03/MG_3442_2.jpg') }}"
+                        src="{{ asset('https://simg.nicepng.com/png/small/933-9332131_profile-picture-default-png.png') }}"
                         class="size-40 rounded-full mb-4 object-cover shadow-xl">
                 </div>
                 <div class="flex mb-2 space-x-2 transition-all ease-in-out"><svg xmlns="http://www.w3.org/2000/svg"

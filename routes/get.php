@@ -28,9 +28,6 @@ Route::get('/prueba', function (Patient $patient) {
 });
 
 
-
-
-
 /**
  * P A T I E N T  R O U T E S
  */
@@ -75,13 +72,13 @@ Route::get('/patient/profile/user/edit', function () {
  *  D O C T O R  R O U T E S
  */
 // pendiente
-Route::get('/doctor/info', function () {
-    return view(
-        'Homepages.homedoctores',
-        [
-            'user' => MedicalAppointment::all(), 
-        ]
-    );
+Route::get('/doctor/info', function (Patient $patient) {
+    return view('Homepages.homedoctores', [
+            'user' => MedicalAppointment::all(),
+            'doctor' => Auth::user(),
+            'patient' => $patient->load('user')
+
+        ]);
 });
 
 Route::get('/doctor/record/{patient}', function (Patient $patient) {
@@ -110,6 +107,7 @@ Route::get('/doctor/prescriptions', function (Patient $patient) {
         'patient' => $patient->with('user')->first()
     ]);
 });
+// En proceso
 
 Route::get('/doctor/appointment/new', function () {
     return view('pantallasDoctores.Nuevacitamedicadoc');

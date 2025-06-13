@@ -1,4 +1,4 @@
-<x-layout title="Home 1">
+<x-layout title="Login">
     <div class="w-screen h-screen grid grid-cols-2" >
 
         <div style="background-image: url({{asset('img/Img.png')}})" class="bg-cover">
