@@ -19,9 +19,11 @@ export default {
 
           },
 colors: {
-    'scriptazul': '#6DB5FE',
-    'scriptverde': '#64BEB6',
-    'scriptmorado': '#B394BD',
+    'azulnegro': '#465459',
+    'celeste': '#A8BFB9',
+    'piel': '#F2A88D',
+    'cafe': '#BF7111',
+    'rosa': '#F26363',
 
 }
 
