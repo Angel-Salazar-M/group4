@@ -1,8 +1,7 @@
 <x-layout title="Register">
-    <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-register">
-{{$errors}}
+    <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-celeste">
         <div class="grid content-center justify-items-center">
-            <div class="bg-white rounded-lg w-96 shadow-xl grid justify-center py-4 mt-4 mb-4">
+            <div class="bg-celeste rounded-lg w-96 shadow-xl grid justify-center py-4 mt-4 mb-4">
                 <h1 class="text-4xl text-black text-center font-sans mb-4 font-semibold">Registrate</h1>
 
                 <form action="/register" method="POST">
@@ -102,9 +101,7 @@
         </div>
 
         <div class="inset-0 flex items-center">
-            <div class="h-screen w-full bg-cover bg-center bg-no-repeat"
-                style="background-image: url('{{ asset('img/fondoregister.png') }}');">
-            </div>
+          
         </div>
     </div>
 </x-layout>
