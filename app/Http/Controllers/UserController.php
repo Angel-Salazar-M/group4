@@ -64,7 +64,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Doctor::create($userableData));
                     if($user->save()) {
-                        return redirect('/doctor/info');
+                        return redirect('/doctor/welcome');
                     }
                     break;
 
@@ -72,7 +72,7 @@ class UserController extends Controller
                     unset($userableData['userable']);
                     $user->userable()->associate(Patient::create($userableData));
                     if($user->save()) {
-                        return redirect('/patient/home');
+                        return redirect('/patient/welcome');
                     }
                     break;
             }

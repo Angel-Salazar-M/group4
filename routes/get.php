@@ -32,11 +32,12 @@ Route::get('/prueba', function (Patient $patient) {
  * P A T I E N T  R O U T E S
  */
 
-Route::get('/patient/home', function () {
-    return view('Homepages.homep', [
-        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
-    ]);
-});
+//De momento reemplazada por "patient/welcome"
+// Route::get('/patient/home', function () {
+//     return view('Homepages.homep', [
+//         'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
+//     ]);
+// });
 
 Route::get('/patient/record', function (Patient $patient) {
     return view('pantallasPacientes.vista-expedientepac', [
@@ -71,15 +72,15 @@ Route::get('/patient/profile/user/edit', function () {
 /**
  *  D O C T O R  R O U T E S
  */
-// pendiente
-Route::get('/doctor/info', function (Patient $patient) {
-    return view('Homepages.homedoctores', [
-            'user' => MedicalAppointment::all(),
-            'doctor' => Auth::user(),
-            'patient' => $patient->load('user')
+// De momento reemplazada por "doctor/welcome"
+// Route::get('/doctor/info', function (Patient $patient) {
+//     return view('Homepages.homedoctores', [
+//             'user' => MedicalAppointment::all(),
+//             'doctor' => Auth::user(),
+//             'patient' => $patient->load('user')
 
-        ]);
-});
+//         ]);
+// });
 
 Route::get('/doctor/record/{patient}', function (Patient $patient) {
     return view('pantallasDoctores.vista-expedientedoc', [
