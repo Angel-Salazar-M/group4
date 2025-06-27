@@ -1,18 +1,16 @@
 <x-layout title="Welcome page">
     <x-barradoc />
     <div
-        class="mt-10 grid bg-white shadow-md rounded-lg max-w-screen-xl px-6 md:px-16 py-8 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        class="mt-10 grid max-w-screen-xl px-6 md:px-16 py-8 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1
                 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-scriptverde">
-                Manage your medical information in just one click
-                <p class="max-w-2xl mb-6 mt-6 font-light lg:mb-8 md:text-lg lg:text-lg text-black">SCRIPTGO es
-                    una plataforma innovadora diseñada para facilitar la organización médica por medio de
-                    características que permiten manejar datos relacionados a la salud como prescripciones médicas e
-                    historiales médicos de manera segura y eficaz .</p>
-
-        </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex"><img src="{{ asset('img/logopng.png') }}" alt="Logo de SCRIPTGO">
+                Technology and health in perfect armony
+                <p class="max-w-2xl mb-6 mt-6 font-light lg:mb-8 md:text-lg lg:text-lg text-black">Use our online method to read your prescriptions and check your medical records. Say goodbye to lost or ilegible prescriptions and repeated information.</p>
+            </h1>
+                <div class="flex justify-center bg-cafe hover:shadow-md hover:scale-110 hover:rounded-lg hover:bg-gray-300 w-24 py-2 mt-4">
+                    <a href="/doctor/welcome">Start now</a>
+                </div>
         </div>
     </div>
     <div class=" mt-14">
