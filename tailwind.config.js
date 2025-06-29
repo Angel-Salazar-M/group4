@@ -13,6 +13,9 @@ export default {
             'register': "url('/public/img/chivo.png')",
             'footer-texture': "url('/img/footer-texture.png')",
             'fondo': "url('/public/img/logo.png')",
+            'welcome1':"url('/public/img/pruebawelcome1.webp')",
+            'welcome2':"url('/public/img/Picture1.png')",
+            'welcome3':"url('/public/img/Picture2.png')",
           },
           fontFamily: {
             'nunito': ['"Nunito Sans"',  ...defaultTheme.fontFamily.sans],
