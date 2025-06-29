@@ -11,6 +11,7 @@ use App\Models\MedicalAppointment;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
+
 class Doctor extends Model
 {
     use HasFactory;

@@ -32,6 +32,7 @@ class UserFactory extends Factory
             'password' => static::$password ??= Hash::make('password'),
             'userable_id' => null,
             'userable_type' => null,
+            
         ];
     }
 

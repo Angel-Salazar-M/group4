@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Doctor;
+use Illuminate\Support\Facades\Storage;
 
 
 class UserController extends Controller
@@ -30,17 +31,18 @@ class UserController extends Controller
         return back()->withErrors(['email' => 'Credenciales incorrectas', 'password' => 'Credenciales incorrectas']);
     }
 
-    public function register(Request $request) {
+    public function register(Request $request)
+    {
 
 
         // Validate the request data
         $verifiedData = $request->validate([
-            'name'=> 'required|min:3',
+            'name' => 'required|min:3',
             'dui' => 'required',
             'birthday' => 'required',
             'phoneNumber' => 'required',
-            'password'=> 'required|min:6|max:20,',
-            'email'=> 'required|email|unique:users,email',
+            'password' => 'required|min:6|max:20,',
+            'email' => 'required|email|unique:users,email',
         ]);
 
         $userableData = $request->validate([
@@ -56,14 +58,14 @@ class UserController extends Controller
 
         $user = User::create($verifiedData);
 
-        if( $user ) {
+        if ($user) {
             Auth::login($user);
 
             switch ($userableData['userable']) {
                 case 'dogtor':
                     unset($userableData['userable']);
                     $user->userable()->associate(Doctor::create($userableData));
-                    if($user->save()) {
+                    if ($user->save()) {
                         return redirect('/doctor/welcome');
                     }
                     break;
@@ -71,7 +73,7 @@ class UserController extends Controller
                 default:
                     unset($userableData['userable']);
                     $user->userable()->associate(Patient::create($userableData));
-                    if($user->save()) {
+                    if ($user->save()) {
                         return redirect('/patient/welcome');
                     }
                     break;
@@ -80,5 +82,70 @@ class UserController extends Controller
 
         return back()->withErrors(['nombre' => 'Credenciales incorrectas', 'email' => 'Credenciales incorrectas', 'password' => 'Credenciales']);
     }
-};
+    public function uploadPhoto(Request $request)
+    {
+        $request->validate(
+            [
+                'photo' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+            ],
+            [
+                'photo.required' => 'Please upload a profile photo.',
+                'photo.image' => 'The file must be an image.',
+                'photo.mimes' => 'Only jpg, jpeg, and png files are allowed.',
+                'photo.max' => 'The photo size must not exceed 2MB.',
+            ]
+        );
+
+        $user = auth()->user();
+
+        if ($user->profile_photo) {
+            Storage::disk('public')->delete($user->profile_photo);
+        }
+
+        $path = $request->file('photo')->store('profile_photos', 'public');
+
+        $user->profile_photo = $path;
+        $user->save();
+
+        return back()->with('success', 'Profile photo updated successfully.');
+    }
+
+public function updateProfile(Request $request)
+{
+    $user = auth()->user();
+
+    $data = $request->validate([
+        
+        'email' => 'required|email|max:255|unique:users,email,' . $user->id,
+        'phoneNumber' => 'nullable|string|max:20',
+        'birthday' => 'nullable|date',
+        'dui' => 'nullable|string|max:20',
+        'medical_code' => 'nullable|string|max:50',
+        'place_address' => 'nullable|string|max:255',
+    ]);
+
+    // Actualizar campos en la tabla users
+    $user->update([
+        'email' => $data['email'],
+        'phoneNumber' => $data['phoneNumber'],
+        'birthday' => $data['birthday'],
+        'dui' => $data['dui'],
+        'place_address' => $data['place_address'],
+    ]);
+
+    // Actualizar el código médico en el modelo relacionado Doctor
+    if ($user->userable_type === Doctor::class && $user->userable) {
+        $user->userable->update([
+            'medical_code' => $data['medical_code'],
+        ]);
+    }
+
+    // Refrescar el modelo para que la relación se actualice
+    $user->refresh();
+
+    return redirect('/doctor/profile')->with('success', 'Profile updated successfully.');
+}
+
+}
+;
 
