@@ -1,107 +1,100 @@
 <x-layout title="Register">
-    <div class="w-screen h-screen grid grid-cols-2 overflow-x-hidden bg-celeste">
-        <div class="grid content-center justify-items-center">
-            <div class="bg-celeste rounded-lg w-96 shadow-xl grid justify-center py-4 mt-4 mb-4">
-                <h1 class="text-4xl text-black text-center font-sans mb-4 font-semibold">Registrate</h1>
+    <div class="w-screen min-h-screen grid grid-cols-2 overflow-hidden bg-azulnegro-to-r from-cafe via-blue-100 to-celeste">
+        
+        {{-- Lado izquierdo: formulario con scroll si es necesario --}}
+        <div class="overflow-y-auto flex items-center justify-center py-10">
+            <div class="bg-white border border-gray-300 rounded-2xl shadow-xl w-96 px-6 py-8 space-y-5">
+                <h1 class="text-3xl text-center font-bold text-gray-800">Regístrate</h1>
 
-                <form action="/register" method="POST">
+                <form action="/register" method="POST" class="space-y-4">
                     @csrf
-                    <p class="font-semibold mt-3">Selecciona tu genero</p>
-                    <label for="">
-                        <input type="radio" name="gender" value="Hombre" placeholder="Genero" checked>
-                        Hombre
-                    </label>
-                    <label for="">
-                        <input type="radio" name="gender" value="Mujer" placeholder="Genero">
-                        Mujer
-                    </label>
-                    <x-input type="text" name="name" placeholder="Nombre completo" /> {{-- buscar forma de que salgan las dos palabras --}}
-                    <x-input type="text" name="dui" placeholder="Dui" />
-                    <x-input type="date" name="birthday" placeholder="Fecha de cumpleaños" />
-                    <x-input type="text" name="email" placeholder="Correo electrónico"></x-input>
+
+                    {{-- Género --}}
+                    <div>
+                        <p class="font-semibold text-gray-700 mb-1">Selecciona tu género</p>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 text-gray-600">
+                                <input type="radio" name="gender" value="Hombre" checked class="accent-blue-600">
+                                Hombre
+                            </label>
+                            <label class="flex items-center gap-2 text-gray-600">
+                                <input type="radio" name="gender" value="Mujer" class="accent-pink-500">
+                                Mujer
+                            </label>
+                        </div>
+                    </div>
+
+                    <x-input type="text" name="name" placeholder="Nombre completo" />
+                    <x-input type="text" name="dui" placeholder="DUI" />
+                    <x-input type="date" name="birthday" placeholder="Fecha de nacimiento" />
+                    <x-input type="text" name="email" placeholder="Correo electrónico" />
                     <x-input type="number" name="phoneNumber" placeholder="Número de teléfono" />
                     <x-input type="password" name="password" placeholder="Contraseña" />
 
-                    <p class="font-semibold">Elige tu tipo de cuenta</p>
+                    {{-- Tipo de cuenta --}}
+                    <div x-data="{ userable: 'patient' }" class="space-y-2">
+                        <p class="font-semibold text-gray-700">Tipo de cuenta</p>
+                        <div class="flex gap-4">
+                            <label class="flex items-center gap-2 text-gray-600">
+                                <input type="radio" id="doctor" name="userable" value="dogtor" x-model="userable" class="accent-blue-600">
+                                Doctor
+                            </label>
+                            <label class="flex items-center gap-2 text-gray-600">
+                                <input type="radio" id="paciente" name="userable" value="patient" x-model="userable" class="accent-blue-600" checked>
+                                Paciente
+                            </label>
+                        </div>
 
-                    <div x-data="{ userable: '' }" class="mb-3">
-                        <label>
-                            <input type="radio" id="doctor" @change="console.log(userable)" name="userable"
-                                value="dogtor" x-model="userable">
-                            Doctor
-                        </label>
-
-                        <label>
-                            <input type="radio" id="paciente" name="userable" value="patient" x-model="userable"
-                                checked>
-                            Paciente
-                        </label>
-                        <template x-if='userable === "dogtor"'>
-                            <div>
+                        <template x-if="userable === 'dogtor'">
+                            <div class="space-y-3 pt-2">
                                 <x-input type="text" name="place_address" placeholder="Dirección de la clínica" />
                                 <x-input type="text" name="medical_speciality" placeholder="Especialidad médica" />
                                 <x-input type="text" name="medical_code" placeholder="Código médico" />
                             </div>
                         </template>
 
-                        <template x-if='userable === "patient"'>
-                            <div>
-                                <div>
-                                </div>
-                                {{-- <x-input type="text" name="age" placeholder="Edad" /> --}}
+                        <template x-if="userable === 'patient'">
+                            <div class="space-y-3 pt-2">
                                 <x-input type="text" name="address" placeholder="Dirección" />
-
-                                <p class="font-semibold">¿Deseas ser cuidador?</p>
-                                <label for="">
-                                    <input type="radio" name="caretaker" value="True">
-                                    Si
-                                </label>
-                                <label for="">
-                                    <input type="radio" name="caretaker" value="False" checked>
-                                    No
-                                </label>
-
-                                {{-- <p class="font-semibold">Selecciona tu estado civil</p>
-
-                                <select name="civil_status">
-                                    <option value="Soltero/a">Soltero/a</option>
-                                    <option value="Casado/a">Casado/a</option>
-                                    <option value="Unión libre">Unión libre</option>
-                                    <option value="Separado/a">Separado/a</option>
-                                    <option value="Divorciado/a">Divorciado/a</option>
-                                    <option value="Viudo/a">Viudo/a</option>
-                                </select>
-
-                                <p class="font-semibold mt-3">Selecciona tu tipo de sangre</p>
-
-                                <select name="blood_type">
-                                    <option value="A+">A+</option>
-                                    <option value="A-">A-</option>
-                                    <option value="B+">B+</option>
-                                    <option value="B-">B-</option>
-                                    <option value="AB+">AB+</option>
-                                    <option value="AB-">AB-</option>
-                                    <option value="O+">O+</option>
-                                    <option value="O-">O-</option>
-                                </select>
-                            </div> --}}
+                                <p class="font-semibold text-gray-700">¿Deseas ser cuidador?</p>
+                                <div class="flex gap-4">
+                                    <label class="flex items-center gap-2 text-gray-600">
+                                        <input type="radio" name="caretaker" value="True" class="accent-green-500">
+                                        Sí
+                                    </label>
+                                    <label class="flex items-center gap-2 text-gray-600">
+                                        <input type="radio" name="caretaker" value="False" checked class="accent-red-500">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
                         </template>
                     </div>
 
-                    <a href="/login" class="font-sans text-gray-600 hover:text-black">
-                        ¿Ya tienes una cuenta? Inicia sesión
-                    </a>
+                    <div class="text-center">
+                        <a href="/login" class="text-sm text-gray-500 hover:text-blue-600 underline">
+                            ¿Ya tienes una cuenta? Inicia sesión
+                        </a>
+                    </div>
 
                     <div class="flex justify-center">
                         <button type="submit"
-                            class=" border-2 font-sans border-white bg bg-[#B394BD] w-40 py-2 rounded-full mt-4 text-white hover:bg-[#5891bf] focus:border-gray-600">Registrarse</button>
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow transition">
+                            Registrarse
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
 
-        <div class="inset-0 flex items-center">
-
+        {{-- Lado derecho: imagen --}}
+        <div class="hidden md:flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('https://source.unsplash.com/800x1000/?healthcare,doctor');">
+            <div class="bg-white bg-opacity-70 backdrop-blur-sm p-6 rounded-xl text-center max-w-sm shadow-lg">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">¡Bienvenido!</h2>
+                <p class="text-gray-700">Regístrate como paciente o doctor para comenzar tu experiencia médica.</p>
+            </div>
         </div>
     </div>
 </x-layout>
+
