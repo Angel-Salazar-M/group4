@@ -1,75 +1,90 @@
 <x-layout title="Perfil">
-    <x-barrapac/>
-<div class="py-8 px-8 grid grid-cols-[300px_1fr] h-[calc(90vh-100px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg">
+    <x-barradoc />
+    <div class="w-[60%] h-auto grid-rows-[auto_1fr] border-2 border-azulnegro mx-auto grid grid-rows-2 mt-8 mb-2">
+        @if(session('success'))
+            <div class="bg-green-200 text-green-800 p-2 rounded mb-4 text-center">
+                {{ session('success') }}
+            </div>
+        @endif
 
-    <div class="py-8 px-8 flex flex-col justify-center items-center border-4 rounded-lg border-scriptverde h-96 w-80 mx-auto shadow-xl bg-gray-100">
-        <img src="{{ asset('img/ejemplop1.jpg') }}"
-            class="w-36 h-36 rounded-full object-cover">
-        <h1 class="mt-6  font-bold text-xl">Dr. Guzmán</h1>
-        <h1 class="text-xl  font-bold">Perfil</h1>
-    </div>
+        @if($errors->any())
+            <div class="bg-red-200 text-red-800 p-2 rounded mb-4 text-center">
+                <ul class="list-disc list-inside">
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        <div class="grid place-content-center place-items-center mx-auto bg-gray-100 my-auto mt-4">
+            <form action="{{ route('profile.photo.upload') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <input type="file" name="photo" class="mb-4">
+                <button type="submit"
+                    class="bg-cafe text-white px-4 py-2 rounded hover:scale-110 transition">Upload</button>
+            </form>
+            <img src="{{ Auth::user()->profile_photo ? asset('storage/' . Auth::user()->profile_photo) : asset('img/usericon.png') }}"
+                alt="Foto de perfil" class="w-36 h-36 rounded-full object-cover">
+            <h1 class="mt-6  font-bold text-xl text-center">{{ Auth::user()->name }} </h1>
+            <h1 class="text-xl  font-bold mb-4">Patient {{ Auth::user()->userable->caretaker ? 'and caretaker' : '' }}
+            </h1>
+            <form action="{{ route('patient.profile.update') }}" method="POST"
+                class="border-t border-azulnegro grid grid-cols-2 w-full p-6 bg-gray-200">
+                @csrf
+                @method('PUT')
 
-    <div class="grid grid-cols-2 my-auto space-y-6 px-12">
-        <div class="col-span-2 flex space-x-5 justify-items-center items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#000000" class="my-auto">
-                <path
-                    d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-            </svg>
-            <h1 class=" text-2xl">Nombre: <input type="text" name="name" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex space-x-5 justify-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#000000" class="my-auto">
-                <path
-                    d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
-            </svg>
-            <h1 class="">Fecha de nacimiento: <input type="date" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex space-x-5 justify-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#000000" class="my-auto">
-                <path
-                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
-            </svg>
-            <h1 class="">Número de teléfono: <input type="number" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex space-x-5 justify-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#000000" class="my-auto">
-                <path
-                    d="M160-80q-33 0-56.5-23.5T80-160v-440q0-33 23.5-56.5T160-680h200v-120q0-33 23.5-56.5T440-880h80q33 0 56.5 23.5T600-800v120h200q33 0 56.5 23.5T880-600v440q0 33-23.5 56.5T800-80H160Zm0-80h640v-440H600q0 33-23.5 56.5T520-520h-80q-33 0-56.5-23.5T360-600H160v440Zm80-80h240v-18q0-17-9.5-31.5T444-312q-20-9-40.5-13.5T360-330q-23 0-43.5 4.5T276-312q-17 8-26.5 22.5T240-258v18Zm320-60h160v-60H560v60Zm-200-60q25 0 42.5-17.5T420-420q0-25-17.5-42.5T360-480q-25 0-42.5 17.5T300-420q0 25 17.5 42.5T360-360Zm200-60h160v-60H560v60ZM440-600h80v-200h-80v200Zm40 220Z" />
-            </svg>
-            <h1 class="">DUI: <input type="number" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex space-x-5 justify-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                fill="#000000" class="my-auto">
-                <path
-                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
-            </svg>
-            <h1 class="">Correo electrónico: <input type="email" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex space-x-5 justify-items-center col-span-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#000000" class="my-auto">
-                        <path
-                            d="M480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Zm0-80q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm-120-80h240v-80H360v80Zm80-120h80v-80h80v-80h-80v-80h-80v80h-80v80h80v80Zm40-120Z" />
-                    </svg>
-            <h1>Tipo sanguíneo: <input type="text" class="border-scriptverde border-2 rounded-xl py-2 px-2"></h1>
-        </div>
-        <div class="flex justify-center col-span-2">
-            <a href="#citasMedicas"
-                class="border-2  font-semibold border-white bg bg-scriptverde text-center  w-40 h-12 py-2 rounded-full text-white focus:border-gray-600">
-                Guardar cambios</a>
-        </div>
-    </div>
-</div>
-<div class="bg-scriptverde text-white space-x-8 h-20 flex justify-around items-center mt-20 col-span-2 w-full">
-    <h1 class="mt-3 mb-2 font-bold ml-5>">CONTACTOS:</h1>
-    <h1 class="mt-3 mb-2 font-bold ml-5>">1234-5678</h1>
-    <h1 class="mt-3 mb-2 font-bold ml-5>">SCRIPTGO@gmail.com</h1>
-    <h1 class="mt-3 mb-2 font-bold ml-5>">SCRIPTGO_SV</h1>
-    </div>
+                <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 bg-gray-200 h-[90%]">
+                    <h1 class="mb-4 text-lg">Contact information</h1>
+
+                    <label class="text-sm" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="w-44 rounded-sm mb-2" placeholder="Email"
+                        value="{{ old('email', Auth::user()->email) }}" required>
+
+                    <label class="text-sm" for="phoneNumber">Phone number</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" class="w-44 rounded-sm"
+                        placeholder="Phone number" value="{{ old('phoneNumber', Auth::user()->phoneNumber) }}">
+                </div>
+
+                <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 bg-gray-200">
+                    <h1 class="text-lg mb-4">Personal information</h1>
+
+                    <label class="text-sm" for="birthday">Birth date</label>
+                    <input type="date" id="birthday" name="birthday" class="w-44 rounded-sm mb-2"
+                        value="{{ old('birthday', Auth::user()->birthday) }}">
+
+                    <label class="text-sm" for="dui">ID</label>
+                    <input type="text" id="dui" name="dui" class="w-44 rounded-sm mb-2" placeholder="ID"
+                        value="{{ old('dui', Auth::user()->dui) }}">
+                    <label class="text-sm" for="caretaker">Is a caretaker</label>
+                    <div
+                        x-data="{ caretaker: {{ json_encode(old('caretaker', Auth::user()->userable->caretaker ?? false)) }} }">
+                        <input type="hidden" name="caretaker" :value="caretaker ? 1 : 0">
+
+                        <button type="button" @click="caretaker = !caretaker"
+                            class="px-4 py-2 rounded-lg text-white font-bold transition focus:outline-none"
+                            :class="caretaker ? 'bg-green-500 hover:bg-green-600' : 'bg-red-500 hover:bg-red-600'">
+                            <span x-text="caretaker ? 'Yes' : 'No'"></span>
+                        </button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 bg-gray-200">
+                    <h1 class="text-lg mb-4">Public information</h1>
+
+                    <label class="text-sm" for="address">Personal address</label>
+                    <input type="text" id="address" name="address" class="w-44 rounded-sm" placeholder="Address"
+                        value="{{ old('address', Auth::user()->userable->address) }}">
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <button type="submit"
+                        class="text-white font-semibold border border-2 dorder-gray-200 w-36 h-16 bg-cafe rounded hover:scale-110 transition">
+                        Save changes
+                    </button>
+                </div>
+            </form>
 
 </x-layout>

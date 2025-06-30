@@ -58,5 +58,8 @@ class User extends Authenticatable
     {
         return $this->morphTo();
     }
-
+    public function getEdadAttribute()
+    {
+        return Carbon::parse($this->birthday)->age;
+    }
 }

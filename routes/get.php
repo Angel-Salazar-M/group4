@@ -55,7 +55,7 @@ Route::get('/patient/prescription', function () {
     return view('pantallasPacientes.recetapac');
 });
 
-Route::get('/patient/profile/user', function (Patient $patient) {
+Route::get('/patient/profile', function (Patient $patient) {
     return view('pantallasPacientes.perfilvistapac', [
         'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
     ]);
@@ -65,7 +65,7 @@ Route::get('/patient/welcome', function () {
     return view('pantallasPacientes.welcomepac');
 });
 
-Route::get('/patient/profile/user/edit', function () {
+Route::get('/patient/profile/edit', function () {
     return view('pantallasPacientes.perfileditarpac');
 });
 

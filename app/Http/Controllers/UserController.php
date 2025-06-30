@@ -110,42 +110,83 @@ class UserController extends Controller
         return back()->with('success', 'Profile photo updated successfully.');
     }
 
-public function updateProfile(Request $request)
-{
-    $user = auth()->user();
+    public function updateDoctor(Request $request)
+    {
+        $user = auth()->user();
 
-    $data = $request->validate([
-        
-        'email' => 'required|email|max:255|unique:users,email,' . $user->id,
-        'phoneNumber' => 'nullable|string|max:20',
-        'birthday' => 'nullable|date',
-        'dui' => 'nullable|string|max:20',
-        'medical_code' => 'nullable|string|max:50',
-        'place_address' => 'nullable|string|max:255',
-    ]);
+        $data = $request->validate([
 
-    // Actualizar campos en la tabla users
-    $user->update([
-        'email' => $data['email'],
-        'phoneNumber' => $data['phoneNumber'],
-        'birthday' => $data['birthday'],
-        'dui' => $data['dui'],
-        'place_address' => $data['place_address'],
-    ]);
-
-    // Actualizar el código médico en el modelo relacionado Doctor
-    if ($user->userable_type === Doctor::class && $user->userable) {
-        $user->userable->update([
-            'medical_code' => $data['medical_code'],
+            'email' => 'required|email|max:255|unique:users,email,' . $user->id,
+            'phoneNumber' => 'nullable|string|max:20',
+            'birthday' => 'nullable|date',
+            'dui' => 'nullable|string|max:20',
+            'medical_code' => 'nullable|string|max:50',
+            'place_address' => 'nullable|string|max:255',
         ]);
+
+        // Actualizar campos en la tabla users
+        $user->update([
+            'email' => $data['email'],
+            'phoneNumber' => $data['phoneNumber'],
+            'birthday' => $data['birthday'],
+            'dui' => $data['dui'],
+            'place_address' => $data['place_address'] ?? $user->place_address,
+        ]);
+
+        // Actualizar el código médico en el modelo relacionado Doctor
+        if ($user->userable_type === Doctor::class && $user->userable) {
+            $user->userable->update([
+                'medical_code' => $data['medical_code'],
+            ]);
+        }
+
+        // Refrescar el modelo para que la relación se actualice
+        $user->refresh();
+
+        return redirect('/doctor/profile')->with('success', 'Profile updated successfully.');
     }
+    public function updatePatient(Request $request)
+    {
+        $user = auth()->user();
 
-    // Refrescar el modelo para que la relación se actualice
-    $user->refresh();
+        $data = $request->validate([
 
-    return redirect('/doctor/profile')->with('success', 'Profile updated successfully.');
-}
+            'email' => 'required|email|max:255|unique:users,email,' . $user->id,
+            'phoneNumber' => 'nullable|string|max:20',
+            'birthday' => 'nullable|date',
+            'dui' => 'nullable|string|max:20',
+            'address' => 'nullable|string|max:255',
+            'caretaker' => 'required|boolean',
+        ]);
 
+        // Actualizar campos en la tabla users
+        $user->update([
+            'email' => $data['email'],
+            'phoneNumber' => $data['phoneNumber'],
+            'birthday' => $data['birthday'],
+            'dui' => $data['dui'],
+            'address' => $data['address'],
+            'caretaker' => $data['caretaker'],
+        ]);
+
+        // Actualizar dirección en modelo relacionado Paciente (userable)
+        if ($user->userable_type === Patient::class && $user->userable) {
+            $user->userable->update([
+                'address' => $data['address'],
+            ]);
+
+        }
+        if ($user->userable_type === Patient::class && $user->userable) {
+            $user->userable->update([
+                'address' => $data['address'],
+                'caretaker' => $data['caretaker'],
+            ]);
+        }
+        // Refrescar el modelo para que la relación se actualice
+        $user->refresh();
+
+        return redirect('/patient/profile')->with('success', 'Profile updated successfully.');
+    }
 }
 ;
 
