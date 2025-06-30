@@ -3,10 +3,10 @@
         
         {{-- Lado izquierdo: formulario con scroll si es necesario --}}
         <div class="overflow-y-auto flex items-center justify-center py-10">
-            <div class="bg-white border border-gray-300 rounded-2xl shadow-xl w-96 px-6 py-8 space-y-5">
-                <h1 class="text-3xl text-center font-bold text-gray-800">Regístrate</h1>
+            <div class="bg-white border border-cafe rounded-2xl shadow-xl w-96 px-6 py-8 space-y-5">
+                <h1 class="text-3xl text-center font-bold text-gray-800 ">Regístrate</h1>
 
-                <form action="/register" method="POST" class="space-y-4">
+                <form action="/register" method="POST" class="space-y-4 ">
                     @csrf
 
                     {{-- Género --}}
