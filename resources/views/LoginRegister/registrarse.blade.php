@@ -101,7 +101,7 @@
         </div>
 
         <div class="inset-0 flex items-center">
-          
+
         </div>
     </div>
 </x-layout>
