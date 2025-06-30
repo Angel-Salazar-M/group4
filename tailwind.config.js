@@ -16,6 +16,7 @@ export default {
             'welcome1':"url('/public/img/pruebawelcome1.webp')",
             'welcome2':"url('/public/img/Picture1.png')",
             'welcome3':"url('/public/img/Picture2.png')",
+            'logon':"url('/public/img/logonuevosg.png')",
           },
           fontFamily: {
             'nunito': ['"Nunito Sans"',  ...defaultTheme.fontFamily.sans],

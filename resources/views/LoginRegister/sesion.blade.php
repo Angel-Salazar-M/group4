@@ -1,25 +1,35 @@
 <x-layout title="Login">
-    <div class="w-screen h-screen grid grid-cols-2" >
-
-        <div style="background-image: url({{asset('img/Img.png')}})" class="bg-cover">
+    <div class="grid grid-cols-2">
+        <div class="bg-welcome1 bg-cover bg-center w-full h-full">
         </div>
+       <div class="h-screen grid place-items-center bg-piel">
+    <div class="grid place-items-center gap-4">
+        <!-- Imagen centrada -->
+        <img src="/img/logonuevosg.png" alt="Logo" class="w-36 h-auto">
 
-        <div class="grid content-center justify-items-center">
-            <div class="bg-white w-96 rounded-lg shadow-xl grid justify-center h-96">
-
-                <h1 class="text-4xl text-black text-center font-sans mt-4">Iniciar sesión</h1>
-
-                <form action="/login" method="POST">
-                    @csrf
-
-                    <x-input type="text" name="email" placeholder="correo electrónico"></x-input>
-                    <x-input type="password" name="password" placeholder="contraseña" />
-                    <a href="/register" class="font-sans text-gray-600 hover:text-black">¿Aún no tienes una cuenta? Registrate</a>
-                    <x-primary-button> Iniciar sesión</x-primary-button>
-
-                </form>
-
+        <!-- Formulario centrado -->
+        <form action="/login" method="POST" class="grid place-items-center w-fit">
+            <h1 class="text-3xl text-white font-bold mb-4">Log In</h1>
+            @csrf
+            <div class="grid place-items-center border-2 border-white p-4">
+                <input type="text" name="email" placeholder=" Email"
+                    class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
+                <input type="password" name="password" placeholder=" Password"
+                    class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
+                <h1 class="text-white">Don't have an account? 
+                    <a href="/register" class="hover:text-blue-600">Sign up here</a>
+                </h1>
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="mt-2 border-2 bg-cafe w-40 py-1 rounded-full text-white text-lg focus:border-gray-600 hover:scale-110 transition">
+                        Log In
+                    </button>
+                </div>
             </div>
-        </div>
+        </form>
+    </div>
+</div>
+
+
     </div>
 </x-layout>
