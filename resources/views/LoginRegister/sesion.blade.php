@@ -4,10 +4,8 @@
         </div>
        <div class="h-screen grid place-items-center bg-piel">
     <div class="grid place-items-center gap-4">
-        <!-- Imagen centrada -->
         <img src="/img/logonuevosg.png" alt="Logo" class="w-36 h-auto">
 
-        <!-- Formulario centrado -->
         <form action="/login" method="POST" class="grid place-items-center w-fit">
             <h1 class="text-3xl text-white font-bold mb-4">Log In</h1>
             @csrf
