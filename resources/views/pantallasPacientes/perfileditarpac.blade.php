@@ -37,11 +37,11 @@
                     <h1 class="mb-4 text-lg">Contact information</h1>
 
                     <label class="text-sm" for="email">Email</label>
-                    <input type="email" id="email" name="email" class="w-44 rounded-sm mb-2" placeholder="Email"
+                    <input type="email" id="email" name="email" class="w-44 rounded-sm mb-2 px-1" placeholder="Email"
                         value="{{ old('email', Auth::user()->email) }}" required>
 
                     <label class="text-sm" for="phoneNumber">Phone number</label>
-                    <input type="text" id="phoneNumber" name="phoneNumber" class="w-44 rounded-sm"
+                    <input type="text" id="phoneNumber" name="phoneNumber" class="w-44 rounded-sm px-1"
                         placeholder="Phone number" value="{{ old('phoneNumber', Auth::user()->phoneNumber) }}">
                 </div>
 
@@ -49,11 +49,11 @@
                     <h1 class="text-lg mb-4">Personal information</h1>
 
                     <label class="text-sm" for="birthday">Birth date</label>
-                    <input type="date" id="birthday" name="birthday" class="w-44 rounded-sm mb-2"
+                    <input type="date" id="birthday" name="birthday" class="w-44 rounded-sm mb-2 px-1"
                         value="{{ old('birthday', Auth::user()->birthday) }}">
 
                     <label class="text-sm" for="dui">ID</label>
-                    <input type="text" id="dui" name="dui" class="w-44 rounded-sm mb-2" placeholder="ID"
+                    <input type="text" id="dui" name="dui" class="w-44 rounded-sm mb-2 px-1" placeholder="ID"
                         value="{{ old('dui', Auth::user()->dui) }}">
                     <label class="text-sm" for="caretaker">Is a caretaker</label>
                     <div
@@ -75,7 +75,7 @@
                     <h1 class="text-lg mb-4">Public information</h1>
 
                     <label class="text-sm" for="address">Personal address</label>
-                    <input type="text" id="address" name="address" class="w-44 rounded-sm" placeholder="Address"
+                    <input type="text" id="address" name="address" class="w-44 rounded-sm px-1" placeholder="Address"
                         value="{{ old('address', Auth::user()->userable->address) }}">
                 </div>
 
