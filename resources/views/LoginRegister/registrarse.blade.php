@@ -86,14 +86,14 @@
                     {{-- Register button --}}
                     <div class="flex justify-center">
                         <button type="submit"
-                            class="bg-[#D37C2F] hover:bg-[#c06b22] text-white font-semibold py-2 px-6 rounded-full shadow transition">
+                            class="bg-rosa hover:bg-piel text-white font-semibold py-2 px-6 rounded-full shadow transition">
                             Sign Up
                         </button>
                     </div>
 
                     {{-- Login link --}}
                     <div class="text-center mt-4">
-                        <a href="/login" class="text-sm text-gray-500 hover:text-blue-400 underline">
+                        <a href="/login" class="text-sm text-gray-500 hover:text-rosa underline">
                             Already have an account? Log in
                         </a>
                     </div>
