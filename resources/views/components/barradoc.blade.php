@@ -6,7 +6,7 @@
         </div>
         <div class="flex w-96 h-full ">
             <!-- Botón 1 -->
-            <a href="/doctor/records"
+            <a href="/doctor/home"
                 class=" flex items-center justify-center w-1/3 h-full hover:shadow-md hover:rounded-lg hover:bg-gray-300 hover:scale-110 transition text-white space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                     fill="#465459">
