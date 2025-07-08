@@ -114,7 +114,7 @@ Route::get('/doctor/appointment/new', function () {
 });
 
 Route::get('/doctor/prescription/new', function () {
-    return view('pantallasDoctores.nueva-prescripcion');
+    return view('pantallasDoctores.newPrescription');
 });
 
 Route::get('/doctor/welcome', function () {

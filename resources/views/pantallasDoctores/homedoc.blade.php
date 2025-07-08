@@ -1,10 +1,9 @@
 <x-layout title="Home">
     <x-barradoc/>
-    <div>
         <div class="px-4 md:p-12">
 
-        <div class="mx-auto max-w-3xl lg:text-center mt-8 mb-14">
-            <p class="font-bold sm:text-5xl text-azulnegro">Patients' <span class=""> List
+        <div class="mx-auto max-w-3xl lg:text-center mb-14">
+            <p class="font-bold sm:text-5xl text-azulnegro">Patients <span class=""> List
                 </span></p>
         </div>
         <div class="mx-auto">
@@ -16,7 +15,7 @@
                             d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
                     </svg></div><input
                     class="py-3 w-full md:w-[32rem] border-2 border-cafe rounded-3xl shadow-xl pl-10 focus:outline-none"
-                    name="search" placeholder="Buscar" type="text">
+                    name="search" placeholder="Search" type="text">
             </div>
         </div>
     </div>
@@ -25,7 +24,7 @@
         @foreach ($patients as $patient)
             <div
                 class="card bg-white p-4 rounded-3xl shadow-md border-solid border-2 border-cafe opacity-90 duration-300 hover:opacity-100">
-                <div class="flex justify-center hover:scale-105 transition-all ease-in-out"><img
+                <div class="flex justify-center transition-all ease-in-out"><img
                         src="{{ asset('https://simg.nicepng.com/png/small/933-9332131_profile-picture-default-png.png') }}"
                         class="size-40 rounded-full mb-4 object-cover shadow-xl">
                 </div>
@@ -78,6 +77,4 @@
             </div>
         @endforeach
     </div>
-<x-prescription/>
-<x-appointment/>
 </x-layout>

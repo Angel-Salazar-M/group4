@@ -29,7 +29,7 @@
         <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-celeste">
             <h1>Easy To Use</h1>
         </div>
-        <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-azulnegro">
+        <div class="grid text-white font-bold place-content-center hover:scale-y-110 transition bg-azulnegro">
             <h1>Secure Storage</h1>
         </div>
     </div>
