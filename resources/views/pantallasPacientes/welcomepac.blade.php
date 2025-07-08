@@ -1,12 +1,12 @@
 <x-layout title="Welcome page">
     <x-barrapac/>
     <div id="start" class="bg-welcome1 bg-cover bg-center min-h-screen w-full pt-4">
-        <div class="md:px-16 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 mt-3">
-            <div class="">
+        <div class="md:px-16 py-8 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="lg:col-span-7">
                 <h1
-                    class="max-w-2xl text-white text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">
+                    class="max-w-2xl mb-4 text-white text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl mt-16">
                     Technology and health in perfect armony</h1>
-                <p class="max-w-xl lg:mb-8 md:text-lg lg:text-lg text-white mt-20">Use our online method
+                <p class="max-w-xl mb-6 lg:mb-8 md:text-lg lg:text-lg text-white mt-20">Use our online method
                     to read your prescriptions and check your medical records. Say goodbye to lost or ilegible
                     prescriptions and repeated information.</p>
 
@@ -78,7 +78,7 @@
                     <p class="leading-relaxed mb-4 text-lg">
                         <strong>Basic plan:</strong> View prescriptions and the medical record for one profile.
                     </p>
-                    <p class="leading-relaxed mb-4 text-lg mb-11">
+                    <p class="leading-relaxed mb-4 text-lg mb-12">
                         <strong>Premium plan:</strong> Manage up to six family members profile.
                     </p>
 
