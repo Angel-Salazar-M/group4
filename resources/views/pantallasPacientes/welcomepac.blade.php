@@ -90,14 +90,14 @@
         <div id="missionVision" class="mt-10 mb-10">
             <h1 class="flex justify-center text-2xl font-semibold mb-3">Mission and Vision</h1>
             <div class="grid grid-cols-2 w-[90%] mx-auto p-6 h-[81%] gap-6">
-                <div class="w-[75%] border-4 border-azulnegro p-6 mx-auto">
+                <div class="w-[75%] border-4 border-rosa p-6 mx-auto">
                     <h1 class="mb-6 font-semibold text-lg text-center">Mission</h1>
                     <p class="leading-relaxed mb-4 text-lg">
                         Transforming healthcare through a secure and efficient digital platform that organizes patient
                         information, facilitates access to care and improves quality of care.
-                    </p>
+                     </p>
                 </div>
-                <div class="mx-auto h-full w-[75%] border-4 border-azulnegro p-6">
+                <div class="mx-auto h-full w-[75%] border-4 border-rosa p-6">
                     <h1 class="mb-6 font-semibold text-lg text-center">Vision</h1>
                     <p class="leading-relaxed mb-4 text-lg">
                         Envision ScriptGo as one of the leading change agents in transforming the traditional way of

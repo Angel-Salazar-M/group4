@@ -21,11 +21,11 @@
                         <p class="font-semibold text-gray-700 mb-1">Select your gender</p>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2 text-gray-600">
-                                <input type="radio" name="gender" value="Hombre" checked class="accent-blue-600">
+                                <input type="radio" name="gender" value="Hombre" checked class="accent-cafe">
                                 Male
                             </label>
                             <label class="flex items-center gap-2 text-gray-600">
-                                <input type="radio" name="gender" value="Mujer" class="accent-pink-500">
+                                <input type="radio" name="gender" value="Mujer" class="accent-rosa">
                                 Female
                             </label>
                         </div>
@@ -45,12 +45,12 @@
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2 text-gray-600">
                                 <input type="radio" id="doctor" name="userable" value="dogtor"
-                                       x-model="userable" class="accent-blue-600">
+                                       x-model="userable" class="accent-rosa">
                                 Doctor
                             </label>
                             <label class="flex items-center gap-2 text-gray-600">
                                 <input type="radio" id="paciente" name="userable" value="patient"
-                                       x-model="userable" class="accent-blue-600" checked>
+                                       x-model="userable" class="accent-rosa" checked>
                                 Patient
                             </label>
                         </div>
