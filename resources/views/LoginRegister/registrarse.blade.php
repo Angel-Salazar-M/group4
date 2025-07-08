@@ -9,7 +9,7 @@
         </div>
 
         {{-- Lado derecho: Formulario funcional y visualmente estilizado --}}
-        <div class="bg-[#3E4A56] flex items-center justify-center py-10 px-4">
+        <div class="bg-piel flex items-center justify-center py-10 px-4">
             <div class="bg-white rounded-xl p-8 w-full max-w-md shadow-xl">
                 <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Create account</h1>
 
