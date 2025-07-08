@@ -9,7 +9,7 @@
         </div>
 
         {{-- Lado derecho: Formulario funcional y visualmente estilizado --}}
-        <div class="bg-[#3E4A56] flex items-center justify-center py-10 px-4">
+        <div class="bg-piel flex items-center justify-center py-10 px-4">
             <div class="bg-white rounded-xl p-8 w-full max-w-md shadow-xl">
                 <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Create account</h1>
 
@@ -86,14 +86,14 @@
                     {{-- Register button --}}
                     <div class="flex justify-center">
                         <button type="submit"
-                            class="bg-[#D37C2F] hover:bg-[#c06b22] text-white font-semibold py-2 px-6 rounded-full shadow transition">
+                            class="bg-rosa hover:bg-piel text-white font-semibold py-2 px-6 rounded-full shadow transition">
                             Sign Up
                         </button>
                     </div>
 
                     {{-- Login link --}}
                     <div class="text-center mt-4">
-                        <a href="/login" class="text-sm text-gray-500 hover:text-blue-400 underline">
+                        <a href="/login" class="text-sm text-gray-500 hover:text-rosa underline">
                             Already have an account? Log in
                         </a>
                     </div>

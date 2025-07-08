@@ -22,11 +22,12 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
             if (Auth::user()->userable_type == "App\Models\Doctor") {
-                return redirect('/doctor/info');
+                return redirect('/doctor/welcome');
             } else {
-                return redirect('/patient/home');
+                return redirect('/patient/welcome');
             }
         }
+
 
         return back()->withErrors(['email' => 'Credenciales incorrectas', 'password' => 'Credenciales incorrectas']);
     }
