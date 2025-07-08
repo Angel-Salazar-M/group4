@@ -53,11 +53,11 @@
 
                                 <p class="font-semibold">¿Deseas ser cuidador?</p>
                                 <label for="">
-                                    <input type="radio" name="caretaker" value="True">
+                                    <input type="radio" name="caretaker" value="1">
                                     Si
                                 </label>
                                 <label for="">
-                                    <input type="radio" name="caretaker" value="False" checked>
+                                    <input type="radio" name="caretaker" value="0" checked>
                                     No
                                 </label>
 

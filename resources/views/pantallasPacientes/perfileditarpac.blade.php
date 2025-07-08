@@ -1,16 +1,16 @@
 <x-layout title="Perfil">
-    <x-barradoc />
+    <x-barradoc/>
     <div class="w-[60%] h-auto grid-rows-[auto_1fr] border-2 border-azulnegro mx-auto grid grid-rows-2 mt-8 mb-2">
-        @if(session('success'))
+        @if (session('success'))
             <div class="bg-green-200 text-green-800 p-2 rounded mb-4 text-center">
                 {{ session('success') }}
             </div>
         @endif
 
-        @if($errors->any())
+        @if ($errors->any())
             <div class="bg-red-200 text-red-800 p-2 rounded mb-4 text-center">
                 <ul class="list-disc list-inside">
-                    @foreach($errors->all() as $error)
+                    @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
@@ -56,8 +56,7 @@
                     <input type="text" id="dui" name="dui" class="w-44 rounded-sm mb-2" placeholder="ID"
                         value="{{ old('dui', Auth::user()->dui) }}">
                     <label class="text-sm" for="caretaker">Is a caretaker</label>
-                    <div
-                        x-data="{ caretaker: {{ json_encode(old('caretaker', Auth::user()->userable->caretaker ?? false)) }} }">
+                    <div x-data="{ caretaker: {{ json_encode(old('caretaker', Auth::user()->userable->caretaker ?? false)) }} }">
                         <input type="hidden" name="caretaker" :value="caretaker ? 1 : 0">
 
                         <button type="button" @click="caretaker = !caretaker"
@@ -86,5 +85,6 @@
                     </button>
                 </div>
             </form>
-
+        </div>
+    </div>
 </x-layout>

@@ -12,11 +12,18 @@
             <h1 class="text-3xl text-white font-bold mb-4">Log In</h1>
             @csrf
             <div class="grid place-items-center border-2 border-white p-4">
-                <input type="text" name="email" placeholder=" Email"
-                    class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
-                <input type="password" name="password" placeholder=" Password"
-                    class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
-                <h1 class="text-white">Don't have an account? 
+                <input type="text" name="email" placeholder=" Email" class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
+                    @if($errors->has('email'))
+                        <span>{{ $errors->first('email') }}</span>
+                    @endif
+
+                <input type="password" name="password" placeholder=" Password" class="border-black bg-white rounded-md text-black mt-4 mb-4 font-sans px-3 py-2 w-60">
+                    @if($errors->has('password'))
+                        <span>{{ $errors->first('password') }}</span>
+                    @endif
+
+
+                <h1 class="text-white">Don't have an account?
                     <a href="/register" class="hover:text-blue-600">Sign up here</a>
                 </h1>
                 <div class="flex justify-center">
