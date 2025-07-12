@@ -1,4 +1,4 @@
-<x-layout title="Welcome page">
+<x-layout title="Welcome to ScriptGo">
     <x-barrapac/>
     <div id="start" class="bg-welcome1 bg-cover bg-center min-h-screen w-full pt-4">
         <div class="md:px-16 py-8 mx-auto space-x-12 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
