@@ -68,9 +68,14 @@
                         </button>
                     </a>
 
+                    <a href="/doctor/patient/prescriptions">
+                        <button type="button" class="bg-cafe text-white transition duration-150 ease-in-out border-2 border-cafe hover:scale-110 transition py-2 px-4 rounded-3xl text-xs uppercase">
+                            Prescriptions
+                        </button>
+                    </a>
                     <a href="/doctor/prescription/new">
                         <button type="button" class="bg-cafe text-white transition duration-150 ease-in-out border-2 border-cafe hover:scale-110 transition tracking-widest py-2 px-4 rounded-3xl text-xs uppercase">
-                            Prescriptions
+                            New prescription
                         </button>
                     </a>
                 </div>

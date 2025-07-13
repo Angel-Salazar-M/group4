@@ -1,5 +1,5 @@
 <x-layout title="Perfil">
-    <x-barradoc/>
+    <x-barrapac/>
     <div class="w-[60%] h-auto grid-rows-[auto_1fr] border-2 border-azulnegro mx-auto grid grid-rows-2 mt-8 mb-2">
         @if (session('success'))
             <div class="bg-green-200 text-green-800 p-2 rounded mb-4 text-center">

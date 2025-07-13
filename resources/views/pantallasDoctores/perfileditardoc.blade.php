@@ -31,7 +31,7 @@
     @csrf
     @method('PUT')
 
-    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-100 h-[90%]">
+    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-200 h-[90%]">
         <h1 class="mb-4 text-lg">Contact information</h1>
 
         <label class="text-sm" for="email">Email</label>
@@ -56,7 +56,7 @@
         >
     </div>
 
-    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-100">
+    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-200">
         <h1 class="text-lg mb-4">Personal information</h1>
 
         <label class="text-sm" for="birthday">Birth date</label>
@@ -89,7 +89,7 @@
 />
     </div>
 
-    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-100">
+    <div class="border border-2 dorder-gray-100 w-[50%] mx-auto p-4 bg-gray-200">
         <h1 class="text-lg mb-4">Public information</h1>
 
         <label class="text-sm" for="place_address">Clinic address</label>
@@ -98,7 +98,7 @@
             id="place_address"
             name="place_address"
             class="w-44 rounded-sm"
-            placeholder="Clinic address"
+            placeholder=" Clinic address"
             value="{{ old('place_address', Auth::user()->place_address) }}"
         >
     </div>
@@ -106,7 +106,7 @@
     <div class="flex items-center justify-center">
         <button
             type="submit"
-            class="text-white font-semibold border border-2 dorder-gray-100 w-36 h-16 bg-cafe rounded hover:scale-110 transition"
+            class="text-white font-semibold border border-2 dorder-gray-200 w-36 h-16 bg-cafe rounded hover:scale-110 transition"
         >
             Save changes
         </button>
