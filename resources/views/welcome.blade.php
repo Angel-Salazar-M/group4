@@ -20,7 +20,7 @@
         <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-azulnegro">
             <h1>Save Time</h1>
         </div>
-        <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-celeste">
+        <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-celeste ">
             <h1>Convenience</h1>
         </div>
         <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-azulnegro">

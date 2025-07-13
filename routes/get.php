@@ -94,12 +94,11 @@ Route::get('/doctor/record/{patient}', function (Patient $patient) {
     ]);
 }); //hechooooo
 
-Route::get('/doctor/records', function () {
-    return view('pantallasDoctores.patients-list', [
+Route::get('/doctor/home', function () {
+    return view('pantallasDoctores.homedoc', [
         'patients' => Patient::all()->load('user')
     ]);
-}); //pendiente modal
-
+});
 
 Route::get('/doctor/profile', function () {
     return view('pantallasDoctores.perfilvistadoc');
@@ -121,7 +120,7 @@ Route::get('/doctor/appointment/new', function () {
 });
 
 Route::get('/doctor/prescription/new', function () {
-    return view('pantallasDoctores.nueva-prescripcion');
+    return view('pantallasDoctores.newPrescription');
 });
 
 Route::get('/doctor/welcome', function () {

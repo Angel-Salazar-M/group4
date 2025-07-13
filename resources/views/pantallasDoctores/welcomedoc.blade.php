@@ -29,7 +29,7 @@
         <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-celeste">
             <h1>Easy To Use</h1>
         </div>
-        <div class="grid text-white font-bold place-content-center hover:scale-110 transition bg-azulnegro">
+        <div class="grid text-white font-bold place-content-center hover:scale-y-110 transition bg-azulnegro">
             <h1>Secure Storage</h1>
         </div>
     </div>
@@ -38,13 +38,13 @@
         <div class="mt-20">
             <h1 class="max-w-2xl mb-4 text-white text-4xl font-extrabold tracking-tight md:text-5xl xl:text-6xl ml-20">
                 Check your
-                medical history
+                medical record
                 every time you
                 need</h1>
             <p class="max-w-xl mb-6 font-light lg:mb-8 md:text-lg lg:text-lg text-white mx-auto">With our premium plan,
                 you will
                 have
-                total access to your medical history.</p>
+                total access to your medical record.</p>
 
             <div class="flex justify-center bg-cafe hover:shadow-md hover:scale-110 transition w-32 px-2 py-2 mt-4 ml-20">
                 <a href="/register" class="text-white font-semibold">subscribe now</a>
@@ -78,7 +78,7 @@
                     <p class="leading-relaxed mb-4 text-lg">
                         <strong>Basic plan:</strong> View prescriptions and the medical record for one profile.
                     </p>
-                    <p class="leading-relaxed mb-4 text-lg mb-12">
+                    <p class="leading-relaxed mb-4 text-lg mb-11">
                         <strong>Premium plan:</strong> Manage up to six family members profile.
                     </p>
 

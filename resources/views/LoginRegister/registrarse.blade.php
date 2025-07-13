@@ -21,11 +21,11 @@
                         <p class="font-semibold text-gray-700 mb-1">Select your gender</p>
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2 text-gray-600">
-                                <input type="radio" name="gender" value="Hombre" checked class="accent-blue-600">
+                                <input type="radio" name="gender" value="Hombre" checked class="accent-cafe">
                                 Male
                             </label>
                             <label class="flex items-center gap-2 text-gray-600">
-                                <input type="radio" name="gender" value="Mujer" class="accent-pink-500">
+                                <input type="radio" name="gender" value="Mujer" class="accent-rosa">
                                 Female
                             </label>
                         </div>
@@ -45,12 +45,12 @@
                         <div class="flex gap-4">
                             <label class="flex items-center gap-2 text-gray-600">
                                 <input type="radio" id="doctor" name="userable" value="dogtor"
-                                       x-model="userable" class="accent-blue-600">
+                                       x-model="userable" class="accent-rosa">
                                 Doctor
                             </label>
                             <label class="flex items-center gap-2 text-gray-600">
                                 <input type="radio" id="paciente" name="userable" value="patient"
-                                       x-model="userable" class="accent-blue-600" checked>
+                                       x-model="userable" class="accent-rosa" checked>
                                 Patient
                             </label>
                         </div>
@@ -86,14 +86,14 @@
                     {{-- Register button --}}
                     <div class="flex justify-center">
                         <button type="submit"
-                            class="bg-[#D37C2F] hover:bg-[#c06b22] text-white font-semibold py-2 px-6 rounded-full shadow transition">
+                            class="bg-rosa hover:bg-piel text-white font-semibold py-2 px-6 rounded-full shadow transition">
                             Sign Up
                         </button>
                     </div>
 
                     {{-- Login link --}}
                     <div class="text-center mt-4">
-                        <a href="/login" class="text-sm text-gray-500 hover:text-blue-400 underline">
+                        <a href="/login" class="text-sm text-gray-500 hover:text-rosa underline">
                             Already have an account? Log in
                         </a>
                     </div>
