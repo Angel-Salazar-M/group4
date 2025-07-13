@@ -1,3 +1,5 @@
 <x-layout title="Perfil">
-    <x-cuadro-recetas/>
+<x-appointment>
+</x-appointment>
+<x-prescripti>
 </x-layout>

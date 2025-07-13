@@ -40,4 +40,10 @@ class Patient extends Model
     {
         return $this->hasMany(MedicalAppointment::class);
     }
+
+    public function show($id)
+{
+    $patient = Patient::findOrFail($id);
+    return view('tu-vista', compact('patient'));
+}
 }

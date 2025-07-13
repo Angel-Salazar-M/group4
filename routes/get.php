@@ -69,6 +69,12 @@ Route::get('/patient/profile/edit', function () {
     return view('pantallasPacientes.perfileditarpac');
 });
 
+Route::get('/patient/appointments', function () {
+    return view('pantallasPacientes.appointments', [
+        'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
+    ]);
+});
+
 /**
  *  D O C T O R  R O U T E S
  */

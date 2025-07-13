@@ -1,6 +1,6 @@
     <div class="w-[60%] border-4 border-cafe m-6 p-6 grid grid-rows-2 h-auto grid-rows-[auto_1fr] bg-gray-100 mx-auto">
         <div class="grid row-start-1 place-items-center border-b-8 border-cafe">
-            <h1>Doctor's name: ahsghjagfsjagdsgjasgfjagshfa</h1>
+            <h1>Doctor's name: </h1>
             <h1 class="mb-4">Prescription ID: 123123 </h1>
 
         </div>
