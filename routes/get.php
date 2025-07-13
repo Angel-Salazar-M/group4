@@ -40,13 +40,13 @@ Route::get('/prueba', function (Patient $patient) {
 // });
 
 Route::get('/patient/record', function (Patient $patient) {
-    return view('pantallasPacientes.vista-expedientepac', [
+    return view('pantallasPacientes.medicalRecord', [
         'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
     ]);
 });
 
 Route::get('/patient/prescriptions', function (Patient $patient) {
-    return view('pantallasPacientes.prescripcioneslistapac', [
+    return view('pantallasPacientes.prescriptions', [
         'patient' => Auth::user()->load('userable', 'userable.prescriptions'),
     ]);
 });

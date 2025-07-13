@@ -48,7 +48,7 @@
             </div>
             <div>
                 <a href="/patient/profile/edit"
-                    class="text-white font-semibold border border-2 dorder-gray-100 w-36 h-16 bg-cafe flex items-center justify-center mx-auto mt-4 rounded-full hover:scale-110 transition ">Edit
+                    class="text-white font-semibold border border-2 dorder-gray-100 w-36 h-16 bg-cafe flex items-center justify-center mx-auto mt-20 rounded hover:scale-110 transition">Edit
                     profile</a>
             </div>
         </div>
