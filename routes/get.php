@@ -94,6 +94,12 @@ Route::get('/doctor/record/{patient}', function (Patient $patient) {
     ]);
 }); //hechooooo
 
+Route::get('/doctor/prescriptions/{patient}', function (Patient $patient) {
+    return view('pantallasDoctores.viewPrescriptionDoc', [
+        'patient' => $patient->load('user')
+    ]);
+});
+
 Route::get('/doctor/home', function () {
     return view('pantallasDoctores.homedoc', [
         'patients' => Patient::all()->load('user')
