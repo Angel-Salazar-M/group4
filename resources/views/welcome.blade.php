@@ -78,7 +78,7 @@
                     <p class="leading-relaxed mb-4 text-lg">
                         <strong>Basic plan:</strong> View prescriptions and the medical record for one profile.
                     </p>
-                    <p class="leading-relaxed mb-4 text-lg mb-12">
+                    <p class="leading-relaxed mb-4 text-lg mb-[70px]">
                         <strong>Premium plan:</strong> Manage up to six family members profile.
                     </p>
 

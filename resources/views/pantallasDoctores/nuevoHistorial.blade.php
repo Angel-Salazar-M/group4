@@ -1,6 +1,4 @@
 <x-layout title="Medical record">
-
-</x-layout><x-layout title="Medical record">
     <div>
         <h1 class=" text-2xl font-bold text-center col-span-2 mt-5 mt-11 mb-4">Enter your patient's personal information to continue</h1>
     </div>
@@ -99,7 +97,7 @@
                     <input type="date" class="border-2 border-cafe">
                 </div>
             </div>
-            
+
         </div>
     </div>
     <div class="flex items-center justify-center">

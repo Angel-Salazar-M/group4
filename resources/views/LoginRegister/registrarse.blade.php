@@ -71,11 +71,11 @@
                                 <p class="font-semibold text-gray-700">Would you like to be a caretaker?</p>
                                 <div class="flex gap-4">
                                     <label class="flex items-center gap-2 text-gray-600">
-                                        <input type="radio" name="caretaker" value="True" class="accent-green-500">
+                                        <input type="radio" name="caretaker" value="1" class="accent-green-500">
                                         Yes
                                     </label>
                                     <label class="flex items-center gap-2 text-gray-600">
-                                        <input type="radio" name="caretaker" value="False" checked class="accent-red-500">
+                                        <input type="radio" name="caretaker" value="0" checked class="accent-red-500">
                                         No
                                     </label>
                                 </div>

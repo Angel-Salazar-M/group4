@@ -18,7 +18,7 @@
             <img src="{{ Auth::user()->profile_photo ? asset('storage/' . Auth::user()->profile_photo) : asset('https://simg.nicepng.com/png/small/933-9332131_profile-picture-default-png.png') }}"
                 class="w-36 h-36 rounded-full object-cover" alt="Foto de perfil">
             <h1 class="mt-6  font-bold text-xl text-center">{{ Auth::user()->name }} </h1>
-            <h1 class="text-xl  font-bold">"especialidad"</h1>
+            <h1 class="text-xl  font-bold">{{ Auth::user()->userable->medical_speciality }}</h1>
         </div>
         <div class="border-t border-azulnegro grid grid-cols-2 w-full p-6 bg-gray-200">
             <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 bg-gray-200">
@@ -38,10 +38,10 @@
                 <p class="text-blue-600">{{ Auth::user()->userable->medical_code }}</p>
 
             </div>
-            <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 mt-4 bg-gray-200">
+            <div class="border border-2 dorder-gray-200 w-[50%] mx-auto p-4 bg-gray-200">
                 <h1 class="">Public information</h1>
                 <h1>Clinic address</h1>
-                <p>{{ Auth::user()->place_address }}</p>
+                <p class="text-blue-600">{{ Auth::user()->userable->place_address }}</p>
             </div>
             <div>
                 <a href="/doctor/profile/edit"

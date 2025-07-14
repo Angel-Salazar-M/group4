@@ -1,5 +1,5 @@
 <x-layout title="expediente">
-    <x-barrapac />
+    <x-barradoc />
 
     <div
         class="grid grid-cols-2 h-[calc(90vh-95px)] place-content-center bg-white shadow-md max-w-7xl mt-10 mx-auto rounded-lg border-2 border-cafe">

@@ -26,7 +26,7 @@
 <img src="{{ Auth::user()->profile_photo ? asset('storage/' . Auth::user()->profile_photo) : asset('img/default.png') }}"
      alt="Foto de perfil" class="w-36 h-36 rounded-full object-cover">
             <h1 class="mt-6  font-bold text-xl text-center">{{ Auth::user()->name }} </h1>
-            <h1 class="text-xl  font-bold mb-4">"especialidad"</h1>
+            <h1 class="text-xl  font-bold mb-4">{{ Auth::user()->userable->place_address }}</h1>
         <form action="{{ route('doctor.profile.update') }}" method="POST" class="border-t border-azulnegro grid grid-cols-2 w-full p-6 bg-gray-200">
     @csrf
     @method('PUT')
@@ -99,7 +99,7 @@
             name="place_address"
             class="w-44 rounded-sm"
             placeholder=" Clinic address"
-            value="{{ old('place_address', Auth::user()->place_address) }}"
+            value="{{ old('place_address', Auth::user()->userable->place_address) }}"
         >
     </div>
 
